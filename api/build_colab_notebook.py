@@ -313,21 +313,42 @@ eval_report = {
 """),
 
     ("markdown", """\
-## 9. Package + download
+## 9. Package + persist + download
 
-Everything you need lives in `/content/artifacts/`. Zip and download.
+Colab's `/content/` is wiped when the runtime disconnects, so we do three things:
+
+1. Copy `/content/artifacts/` to Google Drive at `MyDrive/sheria_artifacts/` — survives runtime restarts, and next time you can skip retraining and just pull them back.
+2. Also save a zipped copy at `MyDrive/sheria_artifacts.zip`.
+3. Trigger a browser download of the zip so you can drop it into the repo locally.
 """),
 
     ("code", """\
 import shutil
-zip_out = '/content/sheria_artifacts'
-shutil.make_archive(zip_out, 'zip', ARTIFACTS)
-print(f'Created {zip_out}.zip:')
+from pathlib import Path
+
+DRIVE_ROOT   = Path('/content/drive/MyDrive')
+DRIVE_DIR    = DRIVE_ROOT / 'sheria_artifacts'
+DRIVE_ZIP    = DRIVE_ROOT / 'sheria_artifacts.zip'
+LOCAL_ZIP    = '/content/sheria_artifacts'   # .zip added by make_archive
+
+# 1. Persist unzipped folder to Drive (overwrite any prior run)
+if DRIVE_DIR.exists():
+    shutil.rmtree(DRIVE_DIR)
+shutil.copytree(ARTIFACTS, DRIVE_DIR)
+print(f'Copied artifacts → {DRIVE_DIR}')
+
+# 2. Also persist a zip to Drive (for easy download later without re-training)
+shutil.make_archive(LOCAL_ZIP, 'zip', ARTIFACTS)
+shutil.copy(f'{LOCAL_ZIP}.zip', DRIVE_ZIP)
+print(f'Copied zip      → {DRIVE_ZIP}')
+
+print('\\nContents:')
 for p in sorted(ARTIFACTS.iterdir()):
     print(f'  {p.name:30s} {p.stat().st_size / 1024:>8.1f} KB')
 
+# 3. Trigger browser download to your Mac
 from google.colab import files
-files.download(f'{zip_out}.zip')
+files.download(f'{LOCAL_ZIP}.zip')
 """),
 
     ("markdown", """\
@@ -337,12 +358,26 @@ On your Mac, from the project root:
 
 ```bash
 cd "sheriabot NLP/api"
-rm -f artifacts/*.joblib artifacts/*.json    # remove the 8k-row artifacts
+rm -f artifacts/*.joblib artifacts/*.json    # remove the previous artifacts
 unzip -o ~/Downloads/sheria_artifacts.zip -d artifacts/
 ls -la artifacts/
+git add artifacts/
+git commit -m "Retrain on 5M dataset"
+git push
 ```
 
-Then push to Railway. No code changes needed — the app auto-loads whatever's in `artifacts/`.
+Railway auto-redeploys from `git push`. The bot restarts with the new model.
+
+## Skip re-training next time — pull from Drive
+
+Because step 9 above also wrote everything to `MyDrive/sheria_artifacts/` and
+`MyDrive/sheria_artifacts.zip`, you don't have to re-run the notebook to
+re-download the artifacts. Any of these works:
+
+- From your Mac: right-click `sheria_artifacts.zip` in Google Drive web →
+  Download, then unzip into `api/artifacts/`.
+- From a fresh Colab session: `!cp /content/drive/MyDrive/sheria_artifacts.zip .`
+  after mounting Drive.
 """),
 ]
 
