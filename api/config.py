@@ -10,8 +10,13 @@ ARTIFACTS  = Path(__file__).resolve().parent / "artifacts"
 GRAPHS_DIR.mkdir(exist_ok=True)
 ARTIFACTS.mkdir(exist_ok=True)
 
-# Sheria-Bot Intents CSV is the primary text corpus for NLP.
-INTENTS_CSV = DATA_DIR / "04_Intents.csv"
+# Sheria-Bot Intents CSV. Prefer the 5M-dataset lowercase name, fall back to the
+# small-dataset uppercase name if only that is present.
+_INTENTS_CANDIDATES = [
+    DATA_DIR / "04_intents.csv",       # 5M dataset
+    DATA_DIR / "04_Intents.csv",       # small dataset
+]
+INTENTS_CSV = next((p for p in _INTENTS_CANDIDATES if p.exists()), _INTENTS_CANDIDATES[0])
 
 # Feature engineering
 TFIDF_MAX_FEATURES = 5000

@@ -102,10 +102,29 @@ STATE: Dict[str, Any] = {
 }
 
 
+EDA_MAX_ROWS = 20_000       # cap for in-process EDA on the 800k-row 5M CSV
+LARGE_FILE_MB = 20          # anything bigger gets sampled instead of fully loaded
+
+
 def load_state() -> Dict[str, Any]:
-    """Load dataset, build stopwords, and return state dict."""
+    """Load dataset, build stopwords, and return state dict.
+
+    For the 5M dataset the intents file is ~127 MB / 800 k rows — loading the
+    whole thing at startup costs ~30 s and ~2 GB RAM per FastAPI worker, which
+    isn't tenable on Railway. When the file is large we sample EDA_MAX_ROWS
+    stratified across intents; the webhook doesn't use STATE["df"] anyway
+    (it reads the joblib-persisted model), so the sample only affects the
+    /stats and /nlp/* analytical endpoints.
+    """
     ensure_nltk()
-    df = pd.read_csv(INTENTS_CSV)
+    file_size_mb = INTENTS_CSV.stat().st_size / (1024 * 1024)
+    if file_size_mb > LARGE_FILE_MB:
+        print(f"[pipeline] {INTENTS_CSV.name} is {file_size_mb:.0f} MB — "
+              f"loading a {EDA_MAX_ROWS:,}-row sample for EDA endpoints.")
+        df = pd.read_csv(INTENTS_CSV, nrows=EDA_MAX_ROWS)
+    else:
+        df = pd.read_csv(INTENTS_CSV)
+
     df = df.rename(columns={"utterance": "text", "intent_label": "intent"})
     df["length"] = df["text"].astype(str).apply(len)
     df["clean"]  = df["text"].apply(clean_text)

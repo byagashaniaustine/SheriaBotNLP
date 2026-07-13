@@ -43,28 +43,37 @@ from schemas import (
 # --------------------------------------------------------------------------
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # EDA endpoints need the CSV; the webhook does not. If data/ is absent we
-    # skip load_state() and only the /stats /nlp/* endpoints degrade — the
-    # WhatsApp flow keeps working off artifacts/ alone.
-    if INTENTS_CSV.exists():
-        print(f"[startup] loading pipeline state from {INTENTS_CSV}")
-        pipeline.load_state()
-    else:
-        print(f"[startup] {INTENTS_CSV} not found — EDA endpoints disabled, "
-              f"webhook still works off artifacts/")
-
+    # Runtime depends ONLY on artifacts/ — never on data/*.csv.
+    # (EDA endpoints load their own CSV on demand; they're dev-only.)
     if pipeline.try_load_saved_classifier():
         print("[startup] loaded classifier from artifacts/")
     else:
         print("[startup] WARNING: no trained classifier — /classify + webhook will error. "
-              "Run `python train.py` first.")
+              "Deploy the trained artifacts/ folder.")
 
     get_engine()
-    print("[startup] answer engine ready")
+    print("[startup] answer engine ready (answer_bank.json)")
     get_store()
-    print("[startup] session store ready")
+    print("[startup] session store ready (SQLite)")
     yield
     print("[shutdown] bye")
+
+
+def _ensure_pipeline_state() -> None:
+    """Lazy loader for the EDA endpoints. Reads from data/ on demand. Only
+    called when someone hits /stats /nlp/pos /nlp/ner /nlp/topwords etc.
+    Production (Railway) doesn't ship data/, so these endpoints will 503 —
+    that's expected: EDA is a dev tool, not part of the WhatsApp bot."""
+    if pipeline.STATE.get("df") is not None:
+        return
+    if not INTENTS_CSV.exists():
+        raise HTTPException(
+            status_code=503,
+            detail=(f"EDA unavailable: {INTENTS_CSV.name} not found in data/. "
+                    "EDA endpoints require the training CSV; the WhatsApp "
+                    "webhook does not."),
+        )
+    pipeline.load_state()
 
 
 app = FastAPI(
@@ -147,6 +156,7 @@ def health() -> HealthResponse:
 # --------------------------------------------------------------------------
 @app.get("/stats", response_model=StatsResponse, tags=["stage 4 - EDA"])
 def stats() -> StatsResponse:
+    _ensure_pipeline_state()
     return StatsResponse(**pipeline.eda_stats())
 
 
@@ -155,6 +165,7 @@ def stats() -> StatsResponse:
 # --------------------------------------------------------------------------
 @app.get("/nlp/pos", response_model=POSResponse, tags=["stage 11 - POS"])
 def pos(sample: int = Query(300, ge=50, le=2000), top_n: int = Query(15, ge=5, le=40)):
+    _ensure_pipeline_state()
     return POSResponse(**pipeline.pos_distribution(sample=sample, top_n=top_n))
 
 
@@ -163,6 +174,7 @@ def pos(sample: int = Query(300, ge=50, le=2000), top_n: int = Query(15, ge=5, l
 # --------------------------------------------------------------------------
 @app.get("/nlp/ner", response_model=NERResponse, tags=["stage 12 - NER"])
 def ner(sample: int = Query(400, ge=50, le=2000)):
+    _ensure_pipeline_state()
     return NERResponse(**pipeline.ner_counts(sample=sample))
 
 
@@ -171,6 +183,7 @@ def ner(sample: int = Query(400, ge=50, le=2000)):
 # --------------------------------------------------------------------------
 @app.get("/nlp/topwords", response_model=TopWordsResponse, tags=["stage 13 - visualisation"])
 def topwords(n: int = Query(20, ge=5, le=100)):
+    _ensure_pipeline_state()
     return TopWordsResponse(**pipeline.top_words(n=n))
 
 
@@ -180,6 +193,7 @@ def topwords(n: int = Query(20, ge=5, le=100)):
 @app.post("/pipeline/features", response_model=TfIdfResponse, tags=["stage 14 - features"],
           dependencies=[Depends(require_admin_key)])
 def features() -> TfIdfResponse:
+    _ensure_pipeline_state()
     return TfIdfResponse(**pipeline.build_features())
 
 
@@ -208,6 +222,7 @@ def tfidf():
           dependencies=[Depends(require_admin_key)])
 def train_word2vec(vector_size: int = Query(100, ge=32, le=300),
                    epochs: int = Query(15, ge=5, le=100)):
+    _ensure_pipeline_state()
     pipeline.build_word2vec(vector_size=vector_size, epochs=epochs)
     return {"status": "ok",
             "vocab_size": len(pipeline.STATE["w2v"].wv),
@@ -237,6 +252,7 @@ def tokenise(text: str = Query(..., description="Text to tokenise both ways")):
 @app.post("/pipeline/train", response_model=TrainResponse, tags=["training"],
           dependencies=[Depends(require_admin_key)])
 def train() -> TrainResponse:
+    _ensure_pipeline_state()
     if pipeline.STATE.get("X_tfidf") is None:
         raise HTTPException(status_code=409, detail="Features not built yet — POST /pipeline/features first")
     return TrainResponse(**pipeline.train_classifiers())

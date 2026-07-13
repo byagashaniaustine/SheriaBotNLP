@@ -1,26 +1,20 @@
 """Turn a classified intent (+ the user's original question + session context)
 into a natural-language answer suitable for sending back over WhatsApp.
 
-Preferred data source is artifacts/answer_bank.json (baked once via
-bake_answers.py). If that JSON isn't present we fall back to reading
-data/05_NLU_Knowledge_Map.csv directly. That means the deployed bot only
-needs artifacts/ — you can delete data/ entirely once the bank is baked.
+Runtime dependency: ONLY artifacts/answer_bank.json — produced once at
+training time by bake_answers.py or the Colab notebook. The runtime bot
+never opens a CSV; if answer_bank.json is missing the engine refuses to
+start rather than silently degrading to something else.
 """
 from __future__ import annotations
 
 import json
 import re
-from pathlib import Path
 from typing import Dict, Any, Optional
 
-from config import DATA_DIR, ARTIFACTS
+from config import ARTIFACTS
 
 ANSWER_BANK_JSON = ARTIFACTS / "answer_bank.json"
-# 5M-dataset filename first, small-dataset filename second.
-NLU_MAP_CANDIDATES = [
-    DATA_DIR / "05_nlu_knowledge_mapping.csv",
-    DATA_DIR / "05_NLU_Knowledge_Map.csv",
-]
 
 _SWAHILI_MARKERS = {
     "na","ya","wa","ni","kwa","za","la","ku","katika","hii","hiyo","nini",
@@ -43,28 +37,15 @@ class AnswerEngine:
         self._load_bank()
 
     def _load_bank(self) -> None:
-        if ANSWER_BANK_JSON.exists():
-            self._bank = json.loads(ANSWER_BANK_JSON.read_text())
-            self._source = "answer_bank.json"
-            return
-        for path in NLU_MAP_CANDIDATES:
-            if not path.exists():
-                continue
-            import pandas as pd
-            df = pd.read_csv(path)
-            for (intent, lang), grp in df.groupby(["parsed_intent", "lang"]):
-                first = grp.iloc[0]
-                self._bank.setdefault(intent, {})[lang] = {
-                    "response": str(first["solution_response"]).strip(),
-                    "citation": str(first.get("citation", "")).strip(),
-                }
-            self._source = path.name
-            return
-        raise FileNotFoundError(
-            f"No answer source found. Expected {ANSWER_BANK_JSON} or one of "
-            f"{[p.name for p in NLU_MAP_CANDIDATES]} in {DATA_DIR}. "
-            "Run bake_answers.py or the Colab training notebook first."
-        )
+        if not ANSWER_BANK_JSON.exists():
+            raise FileNotFoundError(
+                f"{ANSWER_BANK_JSON} not found. This file is a training-time "
+                "artifact produced by bake_answers.py (local) or the Colab "
+                "training notebook. The runtime bot cannot start without it — "
+                "deploy the trained artifacts/ folder alongside the code."
+            )
+        self._bank = json.loads(ANSWER_BANK_JSON.read_text())
+        self._source = "answer_bank.json"
 
     # ------------------------------------------------------------------
     # language detection — light heuristic sufficient for en/sw switch

@@ -38,3 +38,11 @@ api/artifacts/sessions.db-wal
 # --- Large local-only datasets (5M dataset lives on Desktop, not in the repo) ---
 sheria_bot_5m_dataset/
 Sheria-Bot_5M_Dataset.zip
+
+# --- Data files: too large for git (largest is 155 MB, GitHub caps at 100 MB) ---
+# The bot doesn't need them at runtime (uses artifacts/answer_bank.json + *.joblib).
+# For training, upload the ZIP to Google Drive and use api/train_colab.ipynb.
+# For local EDA on a subset, drop small CSVs in data/ — the file-based check
+# in pipeline.load_state() samples large files automatically.
+data/*.csv
+data/*.jsonl
