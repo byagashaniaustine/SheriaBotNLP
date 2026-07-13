@@ -362,18 +362,43 @@ def train_classifiers() -> Dict[str, Any]:
 
 
 def try_load_saved_classifier() -> bool:
-    """Load model+vectoriser+encoder from disk if a previous run trained them."""
+    """Load model+vectoriser+encoder from disk if a previous run trained them.
+
+    Two backends supported. Precedence:
+      1. DistilBERT (if artifacts/bert_model/ or HF_MODEL_ID env var present)
+      2. sklearn TF-IDF (if artifacts/classifier.joblib present)
+
+    The chosen backend is recorded in STATE["backend"] and used by classify_text().
+    """
+    import bert_classifier
+    if bert_classifier.is_available():
+        try:
+            bert_classifier.load()
+            STATE["backend"] = "bert"
+            print(f"[pipeline] classifier backend: BERT ({bert_classifier.source()})")
+            return True
+        except Exception as e:
+            print(f"[pipeline] BERT load failed ({e!r}) — falling back to sklearn")
+
     p = ARTIFACTS / "classifier.joblib"
     if not p.exists():
+        STATE["backend"] = None
         return False
     STATE["classifier"]    = joblib.load(p)
     STATE["tfidf_vec"]     = joblib.load(ARTIFACTS / "tfidf_vec.joblib")
     STATE["label_encoder"] = joblib.load(ARTIFACTS / "label_encoder.joblib")
+    STATE["backend"] = "sklearn"
+    print(f"[pipeline] classifier backend: sklearn ({p.stat().st_size // 1024} KB model)")
     return True
 
 
 def classify_text(text: str, top_k: int = 3) -> Dict[str, Any]:
-    """Classify a single legal question and return the top-k intents."""
+    """Classify a single legal question and return the top-k intents.
+    Dispatches to whichever backend was loaded by try_load_saved_classifier()."""
+    if STATE.get("backend") == "bert":
+        import bert_classifier
+        return bert_classifier.classify(text, top_k=top_k)
+
     clf = STATE["classifier"]
     vec = STATE["tfidf_vec"]
     le  = STATE["label_encoder"]

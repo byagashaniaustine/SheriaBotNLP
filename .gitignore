@@ -24,6 +24,12 @@ api/artifacts/sessions.db-wal
 *.db-shm
 *.db-wal
 
+# --- DistilBERT model weights: 500+ MB, exceeds GitHub's 100 MB per-file cap.
+# Either train + upload to HuggingFace Hub (set HF_MODEL_ID env var on Railway)
+# or copy into api/artifacts/bert_model/ locally. Never commit. ---
+api/artifacts/bert_model/
+api/sheria_artifacts/
+
 # --- macOS ---
 .DS_Store
 
