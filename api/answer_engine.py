@@ -16,16 +16,35 @@ from config import ARTIFACTS
 
 ANSWER_BANK_JSON = ARTIFACTS / "answer_bank.json"
 
+# Distinctive Swahili tokens. Used both as a fast short-text lang detector
+# (before langid) and as a last-resort fallback if langid isn't installed.
 _SWAHILI_MARKERS = {
+    # function words
     "na","ya","wa","ni","kwa","za","la","ku","katika","hii","hiyo","nini",
-    "gani","lini","wapi","vipi","je","nimefutwa","nifanye","nataka",
-    "sijui","siwezi","sitaki","tafadhali","asante","habari","jambo","mambo",
-    "nimechoka","nimeumia","mimi","wewe","yeye","sisi","wao","kazi","mshahara",
-    "mkataba","likizo","ugonjwa","mimba","mtoto","mwajiri","mfanyakazi",
-    "ndio","hapana","sawa","haki","sheria","kesi","cma",
+    "gani","lini","wapi","vipi","je","kwenye","kutoka","kuhusu",
+    # verbs / first-person forms
+    "nimefutwa","nifanye","nataka","sijui","siwezi","sitaki","nafanya",
+    "nimechoka","nimeumia","ninafanya","nikafanya","ninaishi","naishi","naitwa",
+    # greetings / social phrases
+    "tafadhali","asante","asanteni","shukrani","habari","jambo","mambo",
+    "salama","shikamoo","hodi","hongera","karibu","samahani",
+    # goodbyes
+    "kwaheri","baadaye","tutaonana","usiku","mchana","jioni",
+    # pronouns
+    "mimi","wewe","yeye","sisi","nyinyi","wao","yangu","yako","yake","yetu",
+    # topic keywords
+    "kazi","mshahara","mkataba","likizo","ugonjwa","mimba","mtoto","mwajiri",
+    "mfanyakazi","haki","sheria","kesi","cma","malipo","fidia","kufukuzwa",
+    # short affirmatives / negatives
+    "ndio","ndiyo","hapana","sawa","hakika","kabisa",
+    # family / relations
+    "rafiki","dada","kaka","baba","mama","mtoto",
 }
 
-CONFIDENCE_FLOOR = 0.35
+# 0.60 = BERT-appropriate ceiling. Any classifier prediction below this is
+# treated as OUT OF SCOPE (not "please clarify") — the bot won't pretend to
+# answer legal questions it doesn't recognise as employment law.
+CONFIDENCE_FLOOR = 0.60
 
 
 class AnswerEngine:
@@ -48,14 +67,34 @@ class AnswerEngine:
         self._source = "answer_bank.json"
 
     # ------------------------------------------------------------------
-    # language detection — light heuristic sufficient for en/sw switch
+    # language detection — hybrid: langid for longer text, but short messages
+    # with strong Swahili markers ("Kwaheri", "Habari", "Nimefutwa") override
+    # langid because it's unreliable on 2-3 word inputs. Restricted to {en,sw}.
     # ------------------------------------------------------------------
     @staticmethod
     def detect_lang(text: str) -> str:
-        tokens = re.findall(r"[a-zA-ZÀ-ſ]+", text.lower())
+        stripped = text.strip()
+        if not stripped:
+            return "en"
+        tokens = re.findall(r"[a-zA-ZÀ-ſ]+", stripped.lower())
         if not tokens:
             return "en"
+
         sw_hits = sum(1 for t in tokens if t in _SWAHILI_MARKERS)
+
+        # Short text with any Swahili marker → trust the marker over langid.
+        if len(tokens) <= 5 and sw_hits >= 1:
+            return "sw"
+
+        # Longer text: langid handles it well.
+        try:
+            import langid
+            lang, _score = langid.classify(stripped)
+            if lang in ("en", "sw"):
+                return lang
+        except ImportError:
+            pass
+
         return "sw" if sw_hits >= 1 else "en"
 
     # ------------------------------------------------------------------
@@ -154,10 +193,12 @@ class AnswerEngine:
     @staticmethod
     def _disclaimer(lang: str) -> str:
         if lang == "sw":
-            return ("_Ni taarifa ya jumla, si ushauri wa kisheria. "
-                    "Kwa kesi yako maalum, wasiliana na wakili au CMA._")
-        return ("_This is general information, not legal advice. "
-                "For your specific case, consult a lawyer or CMA._")
+            return ("_Kanusho: Hiki ni chombo cha taarifa kinachoendeshwa na AI "
+                    "na hakiwakilishi ushauri rasmi wa kisheria. Kwa masuala rasmi, "
+                    "wasiliana na wakili aliyesajiliwa._")
+        return ("_Disclaimer: This is an AI-powered informational tool and does not "
+                "constitute formal legal advice. For official matters, consult a "
+                "registered advocate._")
 
     # ------------------------------------------------------------------
     # reply helpers
@@ -197,13 +238,16 @@ class AnswerEngine:
 
     @staticmethod
     def _low_confidence_reply(lang: str, name: Optional[str]) -> str:
+        """Below CONFIDENCE_FLOOR the bot admits it's out of scope rather than
+        pretending the question needs clarification. Employment-law only."""
         if lang == "sw":
             return (f"{name + ', ' if name else ''}"
-                    "Sijaelewa vizuri. Tafadhali eleza zaidi — nini kimetokea, lini, "
-                    "na unatarajia matokeo gani?")
+                    "samahani, sijaweza kupata sheria husika ya ajira ya Tanzania "
+                    "inayolingana na swali lako. Tafadhali uliza swali linalohusu "
+                    "masuala ya ajira au kazi.")
         return (f"{name + ', ' if name else ''}"
-                "I want to make sure I answer correctly — could you tell me a bit more? "
-                "What happened, when, and what outcome are you hoping for?")
+                "I'm sorry, I couldn't find a relevant Tanzanian labor law matching "
+                "your question. Please ask a question about employment or workplace matters.")
 
     @staticmethod
     def _unknown_intent_reply(lang: str, name: Optional[str]) -> str:
