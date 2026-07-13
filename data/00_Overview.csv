@@ -1,0 +1,11 @@
+Sheria-Bot Curriculum Training Dataset,Unnamed: 1,Unnamed: 2,Unnamed: 3
+6-level structure: Words → Knowledge → Introductions → Intents → NLU↔Knowledge Mapping → Conversation Flows,,,
+,,,
+Sheet,Level,Purpose,Rows
+01_Words,L1,Bilingual vocabulary tokens — the bot learns language,541
+02_Knowledge_Base,L2,Discrete legal/technical knowledge units — the bot learns the LAW,158
+03_Introductions,L3,Sentences with parsed name/occupation/sector — extraction training,9000
+04_Intents,L4,Case/question utterances with intent labels — classification training,8100
+05_NLU_Knowledge_Map,L5,user_query → intent+entities → knowledge_ids → solution — THE CORE MAPPING,2700
+06_Conversation_Flows,L6,Multi-turn dialogues showing L1→L6 chained,160
+TOTAL,,,20659

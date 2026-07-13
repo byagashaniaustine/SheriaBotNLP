@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtualenvs ---
+venv/
+.venv/
+env/
+
+# --- Secrets ---
+.env
+.env.local
+*.env.local
+
+# --- SQLite runtime state (session DB + WAL journals; can contain user PII) ---
+api/artifacts/sessions.db
+api/artifacts/sessions.db-shm
+api/artifacts/sessions.db-wal
+*.db-shm
+*.db-wal
+
+# --- macOS ---
+.DS_Store
+
+# --- Editor state ---
+.idea/
+.vscode/
+*.swp
+
+# --- Notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Large local-only datasets (5M dataset lives on Desktop, not in the repo) ---
+sheria_bot_5m_dataset/
+Sheria-Bot_5M_Dataset.zip

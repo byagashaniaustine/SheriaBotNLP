@@ -1,0 +1,542 @@
+id,word,lang,category,meaning,concept_tag,bot_action
+W0001,Habari,sw,greeting,hello/news,GREET,respond_in_kind
+W0002,Salama,sw,greeting,peace/greetings,GREET,respond_in_kind
+W0003,Mambo,sw,greeting,what's up,GREET,respond_in_kind
+W0004,Vipi,sw,greeting,how,GREET,respond_in_kind
+W0005,Niaje,sw,greeting,how are you,GREET,respond_in_kind
+W0006,Karibu,sw,greeting,welcome,GREET,respond_in_kind
+W0007,Hodi,sw,greeting,may I come in,GREET,respond_in_kind
+W0008,Hujambo,sw,greeting,are you well,GREET,respond_in_kind
+W0009,Shikamoo,sw,greeting,respectful greeting,GREET_RESPECT,respond_in_kind
+W0010,Marahaba,sw,greeting,reply to shikamoo,GREET_REPLY,respond_in_kind
+W0011,Asubuhi,sw,greeting,morning,TIME_MORNING,respond_in_kind
+W0012,Mchana,sw,greeting,afternoon,TIME_AFTERNOON,respond_in_kind
+W0013,Jioni,sw,greeting,evening,TIME_EVENING,respond_in_kind
+W0014,Usiku,sw,greeting,night,TIME_NIGHT,respond_in_kind
+W0015,Leo,sw,greeting,today,TIME,respond_in_kind
+W0016,Jana,sw,greeting,yesterday,TIME,respond_in_kind
+W0017,Kesho,sw,greeting,tomorrow,TIME,respond_in_kind
+W0018,Sasa,sw,greeting,now,TIME,respond_in_kind
+W0019,Hi,en,greeting,greeting,GREET,respond_in_kind
+W0020,Hello,en,greeting,greeting,GREET,respond_in_kind
+W0021,Hey,en,greeting,casual greeting,GREET,respond_in_kind
+W0022,Greetings,en,greeting,formal greeting,GREET,respond_in_kind
+W0023,Howdy,en,greeting,casual greeting,GREET,respond_in_kind
+W0024,Yo,en,greeting,very casual greeting,GREET,respond_in_kind
+W0025,Morning,en,greeting,good morning,TIME_MORNING,respond_in_kind
+W0026,Afternoon,en,greeting,good afternoon,TIME_AFTERNOON,respond_in_kind
+W0027,Evening,en,greeting,good evening,TIME_EVENING,respond_in_kind
+W0028,Night,en,greeting,good night,TIME_NIGHT,respond_in_kind
+W0029,Today,en,greeting,this day,TIME,respond_in_kind
+W0030,Yesterday,en,greeting,previous day,TIME,respond_in_kind
+W0031,Tomorrow,en,greeting,next day,TIME,respond_in_kind
+W0032,Now,en,greeting,current moment,TIME,respond_in_kind
+W0033,Recently,en,greeting,not long ago,TIME,respond_in_kind
+W0034,Currently,en,greeting,right now,TIME,respond_in_kind
+W0035,Asante,sw,farewell_polite,thank you,THANKS,
+W0036,Asante sana,sw,farewell_polite,thank you very much,THANKS,
+W0037,Nashukuru,sw,farewell_polite,I am grateful,THANKS,
+W0038,Karibu,sw,farewell_polite,you are welcome,THANKS_REPLY,
+W0039,Kwaheri,sw,farewell_polite,goodbye,FAREWELL,
+W0040,Tutaonana,sw,farewell_polite,see you again,FAREWELL,
+W0041,Baadaye,sw,farewell_polite,later,FAREWELL,
+W0042,Lala salama,sw,farewell_polite,sleep well,FAREWELL_NIGHT,
+W0043,Pole,sw,farewell_polite,sorry/sympathy,EMPATHY,
+W0044,Pole sana,sw,farewell_polite,deep sympathy,EMPATHY,
+W0045,Samahani,sw,farewell_polite,excuse me/sorry,APOLOGY,
+W0046,Naomba radhi,sw,farewell_polite,I apologise,APOLOGY,
+W0047,Thanks,en,farewell_polite,gratitude,THANKS,
+W0048,Thank you,en,farewell_polite,gratitude,THANKS,
+W0049,Cheers,en,farewell_polite,thanks (casual),THANKS,
+W0050,You're welcome,en,farewell_polite,reply to thanks,THANKS_REPLY,
+W0051,Goodbye,en,farewell_polite,farewell,FAREWELL,
+W0052,Bye,en,farewell_polite,farewell,FAREWELL,
+W0053,See you,en,farewell_polite,farewell,FAREWELL,
+W0054,Take care,en,farewell_polite,farewell with care,FAREWELL,
+W0055,Sorry,en,farewell_polite,apology/sympathy,APOLOGY,
+W0056,Sorry to hear,en,farewell_polite,sympathy,EMPATHY,
+W0057,Excuse me,en,farewell_polite,polite interruption,POLITE,
+W0058,Ndio,sw,affirmation_negation,yes,YES,
+W0059,Hapana,sw,affirmation_negation,no,NO,
+W0060,Sawa,sw,affirmation_negation,OK/agreed,OK,
+W0061,Vyema,sw,affirmation_negation,fine,OK,
+W0062,Labda,sw,affirmation_negation,maybe,MAYBE,
+W0063,Inawezekana,sw,affirmation_negation,possibly,MAYBE,
+W0064,Sikuelewa,sw,affirmation_negation,I didn't understand,UNCLEAR,
+W0065,Sielewi,sw,affirmation_negation,I don't understand,UNCLEAR,
+W0066,Rudia,sw,affirmation_negation,repeat,REPEAT,
+W0067,Tafadhali,sw,affirmation_negation,please,POLITE,
+W0068,Naomba,sw,affirmation_negation,I request,REQUEST,
+W0069,Saidia,sw,affirmation_negation,help,HELP_REQUEST,
+W0070,Msaada,sw,affirmation_negation,help (noun),HELP_REQUEST,
+W0071,Yes,en,affirmation_negation,affirm,YES,
+W0072,Yeah,en,affirmation_negation,casual yes,YES,
+W0073,No,en,affirmation_negation,negative,NO,
+W0074,Nope,en,affirmation_negation,casual no,NO,
+W0075,OK,en,affirmation_negation,agreed,OK,
+W0076,Okay,en,affirmation_negation,agreed,OK,
+W0077,Alright,en,affirmation_negation,agreed,OK,
+W0078,Right,en,affirmation_negation,correct,OK,
+W0079,Maybe,en,affirmation_negation,uncertain,MAYBE,
+W0080,Possibly,en,affirmation_negation,uncertain,MAYBE,
+W0081,Perhaps,en,affirmation_negation,uncertain,MAYBE,
+W0082,I don't understand,en,affirmation_negation,confusion,UNCLEAR,
+W0083,Confused,en,affirmation_negation,unclear,UNCLEAR,
+W0084,Repeat,en,affirmation_negation,ask repeat,REPEAT,
+W0085,Please,en,affirmation_negation,polite,POLITE,
+W0086,Help,en,affirmation_negation,help request,HELP_REQUEST,
+W0087,Assist,en,affirmation_negation,help request,HELP_REQUEST,
+W0088,Mimi,sw,pronoun,I/me,PRON_I,
+W0089,Wewe,sw,pronoun,you,PRON_YOU,
+W0090,Yeye,sw,pronoun,he/she,PRON_THIRD,
+W0091,Sisi,sw,pronoun,we,PRON_WE,
+W0092,Nyinyi,sw,pronoun,you (pl),PRON_YOU_PL,
+W0093,Wao,sw,pronoun,they,PRON_THEY,
+W0094,Wangu,sw,pronoun,my,POSS_MY,
+W0095,Wako,sw,pronoun,your,POSS_YOUR,
+W0096,Wake,sw,pronoun,his/her,POSS_THIRD,
+W0097,Wetu,sw,pronoun,our,POSS_OUR,
+W0098,I,en,pronoun,first person,PRON_I,
+W0099,Me,en,pronoun,first person obj,PRON_I,
+W0100,You,en,pronoun,second person,PRON_YOU,
+W0101,He,en,pronoun,third person m,PRON_THIRD,
+W0102,She,en,pronoun,third person f,PRON_THIRD,
+W0103,We,en,pronoun,first plural,PRON_WE,
+W0104,They,en,pronoun,third plural,PRON_THEY,
+W0105,My,en,pronoun,possessive,POSS_MY,
+W0106,Your,en,pronoun,possessive,POSS_YOUR,
+W0107,His,en,pronoun,possessive,POSS_THIRD,
+W0108,Her,en,pronoun,possessive,POSS_THIRD,
+W0109,Our,en,pronoun,possessive,POSS_OUR,
+W0110,Nini,sw,question_word,what,Q_WHAT,
+W0111,Nani,sw,question_word,who,Q_WHO,
+W0112,Wapi,sw,question_word,where,Q_WHERE,
+W0113,Lini,sw,question_word,when,Q_WHEN,
+W0114,Kwanini,sw,question_word,why,Q_WHY,
+W0115,Vipi,sw,question_word,how,Q_HOW,
+W0116,Gani,sw,question_word,which,Q_WHICH,
+W0117,Ngapi,sw,question_word,how many,Q_QTY,
+W0118,Kiasi gani,sw,question_word,how much,Q_AMOUNT,
+W0119,What,en,question_word,question word,Q_WHAT,
+W0120,Who,en,question_word,question word,Q_WHO,
+W0121,Where,en,question_word,question word,Q_WHERE,
+W0122,When,en,question_word,question word,Q_WHEN,
+W0123,Why,en,question_word,question word,Q_WHY,
+W0124,How,en,question_word,question word,Q_HOW,
+W0125,Which,en,question_word,question word,Q_WHICH,
+W0126,How many,en,question_word,quantity,Q_QTY,
+W0127,How much,en,question_word,amount,Q_AMOUNT,
+W0128,driver,en,occupation,job role in transport,OCCUPATION,extract_role:driver;extract_sector:transport
+W0129,dereva,sw,occupation,kazi usafiri,OCCUPATION,extract_role:driver;extract_sector:transport
+W0130,teacher,en,occupation,job role in education,OCCUPATION,extract_role:teacher;extract_sector:education
+W0131,mwalimu,sw,occupation,kazi elimu,OCCUPATION,extract_role:teacher;extract_sector:education
+W0132,nurse,en,occupation,job role in health,OCCUPATION,extract_role:nurse;extract_sector:health
+W0133,muuguzi,sw,occupation,kazi afya,OCCUPATION,extract_role:nurse;extract_sector:health
+W0134,doctor,en,occupation,job role in health,OCCUPATION,extract_role:doctor;extract_sector:health
+W0135,daktari,sw,occupation,kazi afya,OCCUPATION,extract_role:doctor;extract_sector:health
+W0136,cleaner,en,occupation,job role in hospitality,OCCUPATION,extract_role:cleaner;extract_sector:hospitality
+W0137,msafishaji,sw,occupation,kazi ukarimu,OCCUPATION,extract_role:cleaner;extract_sector:hospitality
+W0138,cook,en,occupation,job role in hospitality,OCCUPATION,extract_role:cook;extract_sector:hospitality
+W0139,mpishi,sw,occupation,kazi ukarimu,OCCUPATION,extract_role:cook;extract_sector:hospitality
+W0140,waiter,en,occupation,job role in hospitality,OCCUPATION,extract_role:waiter;extract_sector:hospitality
+W0141,mhudumu,sw,occupation,kazi ukarimu,OCCUPATION,extract_role:waiter;extract_sector:hospitality
+W0142,manager,en,occupation,job role in finance,OCCUPATION,extract_role:manager;extract_sector:finance
+W0143,meneja,sw,occupation,kazi fedha,OCCUPATION,extract_role:manager;extract_sector:finance
+W0144,accountant,en,occupation,job role in finance,OCCUPATION,extract_role:accountant;extract_sector:finance
+W0145,mhasibu,sw,occupation,kazi fedha,OCCUPATION,extract_role:accountant;extract_sector:finance
+W0146,lawyer,en,occupation,job role in finance,OCCUPATION,extract_role:lawyer;extract_sector:finance
+W0147,wakili,sw,occupation,kazi fedha,OCCUPATION,extract_role:lawyer;extract_sector:finance
+W0148,farmer,en,occupation,job role in agriculture,OCCUPATION,extract_role:farmer;extract_sector:agriculture
+W0149,mkulima,sw,occupation,kazi kilimo,OCCUPATION,extract_role:farmer;extract_sector:agriculture
+W0150,fisherman,en,occupation,job role in agriculture,OCCUPATION,extract_role:fisherman;extract_sector:agriculture
+W0151,mvuvi,sw,occupation,kazi kilimo,OCCUPATION,extract_role:fisherman;extract_sector:agriculture
+W0152,miner,en,occupation,job role in mining,OCCUPATION,extract_role:miner;extract_sector:mining
+W0153,mchimbaji,sw,occupation,kazi uchimbaji,OCCUPATION,extract_role:miner;extract_sector:mining
+W0154,builder,en,occupation,job role in construction,OCCUPATION,extract_role:builder;extract_sector:construction
+W0155,mjenzi,sw,occupation,kazi ujenzi,OCCUPATION,extract_role:builder;extract_sector:construction
+W0156,carpenter,en,occupation,job role in construction,OCCUPATION,extract_role:carpenter;extract_sector:construction
+W0157,seremala,sw,occupation,kazi ujenzi,OCCUPATION,extract_role:carpenter;extract_sector:construction
+W0158,plumber,en,occupation,job role in construction,OCCUPATION,extract_role:plumber;extract_sector:construction
+W0159,fundi wa mabomba,sw,occupation,kazi ujenzi,OCCUPATION,extract_role:plumber;extract_sector:construction
+W0160,electrician,en,occupation,job role in construction,OCCUPATION,extract_role:electrician;extract_sector:construction
+W0161,fundi umeme,sw,occupation,kazi ujenzi,OCCUPATION,extract_role:electrician;extract_sector:construction
+W0162,security guard,en,occupation,job role in security,OCCUPATION,extract_role:security guard;extract_sector:security
+W0163,mlinzi,sw,occupation,kazi ulinzi,OCCUPATION,extract_role:security guard;extract_sector:security
+W0164,watchman,en,occupation,job role in security,OCCUPATION,extract_role:watchman;extract_sector:security
+W0165,mlinzi wa usiku,sw,occupation,kazi ulinzi,OCCUPATION,extract_role:watchman;extract_sector:security
+W0166,tailor,en,occupation,job role in industrial,OCCUPATION,extract_role:tailor;extract_sector:industrial
+W0167,mshonaji,sw,occupation,kazi viwanda,OCCUPATION,extract_role:tailor;extract_sector:industrial
+W0168,hairdresser,en,occupation,job role in industrial,OCCUPATION,extract_role:hairdresser;extract_sector:industrial
+W0169,msusi,sw,occupation,kazi viwanda,OCCUPATION,extract_role:hairdresser;extract_sector:industrial
+W0170,mechanic,en,occupation,job role in transport,OCCUPATION,extract_role:mechanic;extract_sector:transport
+W0171,fundi wa magari,sw,occupation,kazi usafiri,OCCUPATION,extract_role:mechanic;extract_sector:transport
+W0172,photographer,en,occupation,job role in sports,OCCUPATION,extract_role:photographer;extract_sector:sports
+W0173,mpiga picha,sw,occupation,kazi michezo,OCCUPATION,extract_role:photographer;extract_sector:sports
+W0174,journalist,en,occupation,job role in communications,OCCUPATION,extract_role:journalist;extract_sector:communications
+W0175,mwanahabari,sw,occupation,kazi mawasiliano,OCCUPATION,extract_role:journalist;extract_sector:communications
+W0176,banker,en,occupation,job role in finance,OCCUPATION,extract_role:banker;extract_sector:finance
+W0177,mhudumu wa benki,sw,occupation,kazi fedha,OCCUPATION,extract_role:banker;extract_sector:finance
+W0178,cashier,en,occupation,job role in finance,OCCUPATION,extract_role:cashier;extract_sector:finance
+W0179,keshia,sw,occupation,kazi fedha,OCCUPATION,extract_role:cashier;extract_sector:finance
+W0180,receptionist,en,occupation,job role in hospitality,OCCUPATION,extract_role:receptionist;extract_sector:hospitality
+W0181,mhudumu wa mapokezi,sw,occupation,kazi ukarimu,OCCUPATION,extract_role:receptionist;extract_sector:hospitality
+W0182,salesperson,en,occupation,job role in finance,OCCUPATION,extract_role:salesperson;extract_sector:finance
+W0183,muuzaji,sw,occupation,kazi fedha,OCCUPATION,extract_role:salesperson;extract_sector:finance
+W0184,clerk,en,occupation,job role in finance,OCCUPATION,extract_role:clerk;extract_sector:finance
+W0185,karani,sw,occupation,kazi fedha,OCCUPATION,extract_role:clerk;extract_sector:finance
+W0186,officer,en,occupation,job role in education,OCCUPATION,extract_role:officer;extract_sector:education
+W0187,afisa,sw,occupation,kazi elimu,OCCUPATION,extract_role:officer;extract_sector:education
+W0188,engineer,en,occupation,job role in industrial,OCCUPATION,extract_role:engineer;extract_sector:industrial
+W0189,mhandisi,sw,occupation,kazi viwanda,OCCUPATION,extract_role:engineer;extract_sector:industrial
+W0190,nanny,en,occupation,job role in domestic,OCCUPATION,extract_role:nanny;extract_sector:domestic
+W0191,yaya,sw,occupation,kazi kazi za nyumbani,OCCUPATION,extract_role:nanny;extract_sector:domestic
+W0192,housekeeper,en,occupation,job role in domestic,OCCUPATION,extract_role:housekeeper;extract_sector:domestic
+W0193,mfanyakazi wa nyumbani,sw,occupation,kazi kazi za nyumbani,OCCUPATION,extract_role:housekeeper;extract_sector:domestic
+W0194,trainee,en,occupation,job role in education,OCCUPATION,extract_role:trainee;extract_sector:education
+W0195,mwanafunzi wa kazi,sw,occupation,kazi elimu,OCCUPATION,extract_role:trainee;extract_sector:education
+W0196,intern,en,occupation,job role in finance,OCCUPATION,extract_role:intern;extract_sector:finance
+W0197,intern,sw,occupation,kazi fedha,OCCUPATION,extract_role:intern;extract_sector:finance
+W0198,call centre agent,en,occupation,job role in communications,OCCUPATION,extract_role:call centre agent;extract_sector:communications
+W0199,mhudumu wa call centre,sw,occupation,kazi mawasiliano,OCCUPATION,extract_role:call centre agent;extract_sector:communications
+W0200,delivery rider,en,occupation,job role in transport,OCCUPATION,extract_role:delivery rider;extract_sector:transport
+W0201,dereva wa boda,sw,occupation,kazi usafiri,OCCUPATION,extract_role:delivery rider;extract_sector:transport
+W0202,hotel manager,en,occupation,job role in hospitality,OCCUPATION,extract_role:hotel manager;extract_sector:hospitality
+W0203,meneja wa hoteli,sw,occupation,kazi ukarimu,OCCUPATION,extract_role:hotel manager;extract_sector:hospitality
+W0204,tour guide,en,occupation,job role in hospitality,OCCUPATION,extract_role:tour guide;extract_sector:hospitality
+W0205,tour guide,sw,occupation,kazi ukarimu,OCCUPATION,extract_role:tour guide;extract_sector:hospitality
+W0206,welder,en,occupation,job role in industrial,OCCUPATION,extract_role:welder;extract_sector:industrial
+W0207,welder,sw,occupation,kazi viwanda,OCCUPATION,extract_role:welder;extract_sector:industrial
+W0208,warehouse worker,en,occupation,job role in industrial,OCCUPATION,extract_role:warehouse worker;extract_sector:industrial
+W0209,mfanyakazi wa ghala,sw,occupation,kazi viwanda,OCCUPATION,extract_role:warehouse worker;extract_sector:industrial
+W0210,HR officer,en,occupation,job role in finance,OCCUPATION,extract_role:HR officer;extract_sector:finance
+W0211,afisa wa rasilimali watu,sw,occupation,kazi fedha,OCCUPATION,extract_role:HR officer;extract_sector:finance
+W0212,librarian,en,occupation,job role in education,OCCUPATION,extract_role:librarian;extract_sector:education
+W0213,mtunza maktaba,sw,occupation,kazi elimu,OCCUPATION,extract_role:librarian;extract_sector:education
+W0214,pharmacist,en,occupation,job role in health,OCCUPATION,extract_role:pharmacist;extract_sector:health
+W0215,mfamasia,sw,occupation,kazi afya,OCCUPATION,extract_role:pharmacist;extract_sector:health
+W0216,midwife,en,occupation,job role in health,OCCUPATION,extract_role:midwife;extract_sector:health
+W0217,mkunga,sw,occupation,kazi afya,OCCUPATION,extract_role:midwife;extract_sector:health
+W0218,janitor,en,occupation,job role in hospitality,OCCUPATION,extract_role:janitor;extract_sector:hospitality
+W0219,mtunza mazingira,sw,occupation,kazi ukarimu,OCCUPATION,extract_role:janitor;extract_sector:hospitality
+W0220,gardener,en,occupation,job role in agriculture,OCCUPATION,extract_role:gardener;extract_sector:agriculture
+W0221,mtunza bustani,sw,occupation,kazi kilimo,OCCUPATION,extract_role:gardener;extract_sector:agriculture
+W0222,waste collector,en,occupation,job role in waste,OCCUPATION,extract_role:waste collector;extract_sector:waste
+W0223,mkusanyaji wa taka,sw,occupation,kazi taka,OCCUPATION,extract_role:waste collector;extract_sector:waste
+W0224,supervisor,en,occupation,job role in industrial,OCCUPATION,extract_role:supervisor;extract_sector:industrial
+W0225,msimamizi,sw,occupation,kazi viwanda,OCCUPATION,extract_role:supervisor;extract_sector:industrial
+W0226,foreman,en,occupation,job role in construction,OCCUPATION,extract_role:foreman;extract_sector:construction
+W0227,fundi mkuu,sw,occupation,kazi ujenzi,OCCUPATION,extract_role:foreman;extract_sector:construction
+W0228,communications,en,sector,economic sector,SECTOR,extract_sector:communications
+W0229,mawasiliano,sw,sector,sekta,SECTOR,extract_sector:communications
+W0230,education,en,sector,economic sector,SECTOR,extract_sector:education
+W0231,elimu,sw,sector,sekta,SECTOR,extract_sector:education
+W0232,finance,en,sector,economic sector,SECTOR,extract_sector:finance
+W0233,fedha,sw,sector,sekta,SECTOR,extract_sector:finance
+W0234,health,en,sector,economic sector,SECTOR,extract_sector:health
+W0235,afya,sw,sector,sekta,SECTOR,extract_sector:health
+W0236,transport,en,sector,economic sector,SECTOR,extract_sector:transport
+W0237,usafiri,sw,sector,sekta,SECTOR,extract_sector:transport
+W0238,construction,en,sector,economic sector,SECTOR,extract_sector:construction
+W0239,ujenzi,sw,sector,sekta,SECTOR,extract_sector:construction
+W0240,energy,en,sector,economic sector,SECTOR,extract_sector:energy
+W0241,nishati,sw,sector,sekta,SECTOR,extract_sector:energy
+W0242,industrial,en,sector,economic sector,SECTOR,extract_sector:industrial
+W0243,viwanda,sw,sector,sekta,SECTOR,extract_sector:industrial
+W0244,waste,en,sector,economic sector,SECTOR,extract_sector:waste
+W0245,taka,sw,sector,sekta,SECTOR,extract_sector:waste
+W0246,other,en,sector,economic sector,SECTOR,extract_sector:other
+W0247,nyingine,sw,sector,sekta,SECTOR,extract_sector:other
+W0248,mining,en,sector,economic sector,SECTOR,extract_sector:mining
+W0249,uchimbaji,sw,sector,sekta,SECTOR,extract_sector:mining
+W0250,security,en,sector,economic sector,SECTOR,extract_sector:security
+W0251,ulinzi,sw,sector,sekta,SECTOR,extract_sector:security
+W0252,domestic,en,sector,economic sector,SECTOR,extract_sector:domestic
+W0253,kazi za nyumbani,sw,sector,sekta,SECTOR,extract_sector:domestic
+W0254,sports,en,sector,economic sector,SECTOR,extract_sector:sports
+W0255,michezo,sw,sector,sekta,SECTOR,extract_sector:sports
+W0256,hospitality,en,sector,economic sector,SECTOR,extract_sector:hospitality
+W0257,ukarimu,sw,sector,sekta,SECTOR,extract_sector:hospitality
+W0258,agriculture,en,sector,economic sector,SECTOR,extract_sector:agriculture
+W0259,kilimo,sw,sector,sekta,SECTOR,extract_sector:agriculture
+W0260,salary,en,employment_concept,monthly pay,WAGE,map_concept:WAGE
+W0261,mshahara,sw,employment_concept,monthly pay,WAGE,map_concept:WAGE
+W0262,wage,en,employment_concept,pay,WAGE,map_concept:WAGE
+W0263,mshahara,sw,employment_concept,pay,WAGE,map_concept:WAGE
+W0264,pay,en,employment_concept,payment,WAGE,map_concept:WAGE
+W0265,malipo,sw,employment_concept,payment,WAGE,map_concept:WAGE
+W0266,contract,en,employment_concept,employment agreement,CONTRACT,map_concept:CONTRACT
+W0267,mkataba,sw,employment_concept,employment agreement,CONTRACT,map_concept:CONTRACT
+W0268,job,en,employment_concept,employment,JOB,map_concept:JOB
+W0269,kazi,sw,employment_concept,employment,JOB,map_concept:JOB
+W0270,work,en,employment_concept,employment activity,JOB,map_concept:JOB
+W0271,kazi,sw,employment_concept,employment activity,JOB,map_concept:JOB
+W0272,employer,en,employment_concept,entity that hires,EMPLOYER,map_concept:EMPLOYER
+W0273,mwajiri,sw,employment_concept,entity that hires,EMPLOYER,map_concept:EMPLOYER
+W0274,employee,en,employment_concept,person hired,EMPLOYEE,map_concept:EMPLOYEE
+W0275,mfanyakazi,sw,employment_concept,person hired,EMPLOYEE,map_concept:EMPLOYEE
+W0276,boss,en,employment_concept,supervisor,EMPLOYER,map_concept:EMPLOYER
+W0277,bosi,sw,employment_concept,supervisor,EMPLOYER,map_concept:EMPLOYER
+W0278,worker,en,employment_concept,labourer,EMPLOYEE,map_concept:EMPLOYEE
+W0279,mfanyakazi,sw,employment_concept,labourer,EMPLOYEE,map_concept:EMPLOYEE
+W0280,hire,en,employment_concept,action of hiring,EVENT_HIRE,map_concept:EVENT_HIRE
+W0281,kuajiri,sw,employment_concept,action of hiring,EVENT_HIRE,map_concept:EVENT_HIRE
+W0282,fire,en,employment_concept,action of dismissing,EVENT_DISMISS,map_concept:EVENT_DISMISS
+W0283,kufukuza,sw,employment_concept,action of dismissing,EVENT_DISMISS,map_concept:EVENT_DISMISS
+W0284,dismiss,en,employment_concept,terminate employment,EVENT_DISMISS,map_concept:EVENT_DISMISS
+W0285,kufukuza,sw,employment_concept,terminate employment,EVENT_DISMISS,map_concept:EVENT_DISMISS
+W0286,dismissed,en,employment_concept,passive of fire,EVENT_DISMISS,map_concept:EVENT_DISMISS
+W0287,kufukuzwa,sw,employment_concept,passive of fire,EVENT_DISMISS,map_concept:EVENT_DISMISS
+W0288,terminate,en,employment_concept,end employment,EVENT_DISMISS,map_concept:EVENT_DISMISS
+W0289,kusitisha,sw,employment_concept,end employment,EVENT_DISMISS,map_concept:EVENT_DISMISS
+W0290,terminated,en,employment_concept,passive,EVENT_DISMISS,map_concept:EVENT_DISMISS
+W0291,amesitishwa,sw,employment_concept,passive,EVENT_DISMISS,map_concept:EVENT_DISMISS
+W0292,retrench,en,employment_concept,operational layoff,EVENT_RETRENCH,map_concept:EVENT_RETRENCH
+W0293,kupunguza,sw,employment_concept,operational layoff,EVENT_RETRENCH,map_concept:EVENT_RETRENCH
+W0294,retrenched,en,employment_concept,passive,EVENT_RETRENCH,map_concept:EVENT_RETRENCH
+W0295,amepunguzwa,sw,employment_concept,passive,EVENT_RETRENCH,map_concept:EVENT_RETRENCH
+W0296,resign,en,employment_concept,voluntary leave,EVENT_RESIGN,map_concept:EVENT_RESIGN
+W0297,kujiuzulu,sw,employment_concept,voluntary leave,EVENT_RESIGN,map_concept:EVENT_RESIGN
+W0298,quit,en,employment_concept,voluntary leave,EVENT_RESIGN,map_concept:EVENT_RESIGN
+W0299,kuacha,sw,employment_concept,voluntary leave,EVENT_RESIGN,map_concept:EVENT_RESIGN
+W0300,notice,en,employment_concept,termination notice,NOTICE,map_concept:NOTICE
+W0301,notisi,sw,employment_concept,termination notice,NOTICE,map_concept:NOTICE
+W0302,severance,en,employment_concept,end-of-service pay,SEVERANCE,map_concept:SEVERANCE
+W0303,kifuta jasho,sw,employment_concept,end-of-service pay,SEVERANCE,map_concept:SEVERANCE
+W0304,gratuity,en,employment_concept,end-of-service pay,SEVERANCE,map_concept:SEVERANCE
+W0305,kifuta machozi,sw,employment_concept,end-of-service pay,SEVERANCE,map_concept:SEVERANCE
+W0306,leave,en,employment_concept,time off,LEAVE,map_concept:LEAVE
+W0307,likizo,sw,employment_concept,time off,LEAVE,map_concept:LEAVE
+W0308,holiday,en,employment_concept,public holiday,HOLIDAY,map_concept:HOLIDAY
+W0309,sikukuu,sw,employment_concept,public holiday,HOLIDAY,map_concept:HOLIDAY
+W0310,sick,en,employment_concept,illness,SICK,map_concept:SICK
+W0311,ugonjwa,sw,employment_concept,illness,SICK,map_concept:SICK
+W0312,sick leave,en,employment_concept,illness leave,LEAVE_SICK,map_concept:LEAVE_SICK
+W0313,likizo ya ugonjwa,sw,employment_concept,illness leave,LEAVE_SICK,map_concept:LEAVE_SICK
+W0314,maternity,en,employment_concept,childbirth,LEAVE_MATERNITY,map_concept:LEAVE_MATERNITY
+W0315,uzazi,sw,employment_concept,childbirth,LEAVE_MATERNITY,map_concept:LEAVE_MATERNITY
+W0316,maternity leave,en,employment_concept,childbirth leave,LEAVE_MATERNITY,map_concept:LEAVE_MATERNITY
+W0317,likizo ya uzazi,sw,employment_concept,childbirth leave,LEAVE_MATERNITY,map_concept:LEAVE_MATERNITY
+W0318,paternity,en,employment_concept,fatherhood,LEAVE_PATERNITY,map_concept:LEAVE_PATERNITY
+W0319,baba,sw,employment_concept,fatherhood,LEAVE_PATERNITY,map_concept:LEAVE_PATERNITY
+W0320,paternity leave,en,employment_concept,fatherhood leave,LEAVE_PATERNITY,map_concept:LEAVE_PATERNITY
+W0321,likizo ya baba,sw,employment_concept,fatherhood leave,LEAVE_PATERNITY,map_concept:LEAVE_PATERNITY
+W0322,annual leave,en,employment_concept,yearly leave,LEAVE_ANNUAL,map_concept:LEAVE_ANNUAL
+W0323,likizo ya mwaka,sw,employment_concept,yearly leave,LEAVE_ANNUAL,map_concept:LEAVE_ANNUAL
+W0324,unpaid leave,en,employment_concept,unpaid time off,LEAVE_UNPAID,map_concept:LEAVE_UNPAID
+W0325,likizo bila malipo,sw,employment_concept,unpaid time off,LEAVE_UNPAID,map_concept:LEAVE_UNPAID
+W0326,overtime,en,employment_concept,extra hours,OVERTIME,map_concept:OVERTIME
+W0327,saa za ziada,sw,employment_concept,extra hours,OVERTIME,map_concept:OVERTIME
+W0328,hours,en,employment_concept,working hours,HOURS,map_concept:HOURS
+W0329,masaa,sw,employment_concept,working hours,HOURS,map_concept:HOURS
+W0330,break,en,employment_concept,rest period,BREAK,map_concept:BREAK
+W0331,mapumziko,sw,employment_concept,rest period,BREAK,map_concept:BREAK
+W0332,training,en,employment_concept,skills development,TRAINING,map_concept:TRAINING
+W0333,mafunzo,sw,employment_concept,skills development,TRAINING,map_concept:TRAINING
+W0334,probation,en,employment_concept,trial period,PROBATION,map_concept:PROBATION
+W0335,probation,sw,employment_concept,trial period,PROBATION,map_concept:PROBATION
+W0336,promotion,en,employment_concept,upward move,PROMOTION,map_concept:PROMOTION
+W0337,kupanda cheo,sw,employment_concept,upward move,PROMOTION,map_concept:PROMOTION
+W0338,demotion,en,employment_concept,downward move,DEMOTION,map_concept:DEMOTION
+W0339,kushuka cheo,sw,employment_concept,downward move,DEMOTION,map_concept:DEMOTION
+W0340,transfer,en,employment_concept,location change,TRANSFER,map_concept:TRANSFER
+W0341,uhamisho,sw,employment_concept,location change,TRANSFER,map_concept:TRANSFER
+W0342,harassment,en,employment_concept,unwanted conduct,HARASSMENT,map_concept:HARASSMENT
+W0343,unyanyasaji,sw,employment_concept,unwanted conduct,HARASSMENT,map_concept:HARASSMENT
+W0344,discrimination,en,employment_concept,unfair treatment,DISCRIMINATION,map_concept:DISCRIMINATION
+W0345,ubaguzi,sw,employment_concept,unfair treatment,DISCRIMINATION,map_concept:DISCRIMINATION
+W0346,injury,en,employment_concept,workplace harm,INJURY,map_concept:INJURY
+W0347,jeraha,sw,employment_concept,workplace harm,INJURY,map_concept:INJURY
+W0348,accident,en,employment_concept,workplace incident,ACCIDENT,map_concept:ACCIDENT
+W0349,ajali,sw,employment_concept,workplace incident,ACCIDENT,map_concept:ACCIDENT
+W0350,compensation,en,employment_concept,damages payment,COMPENSATION,map_concept:COMPENSATION
+W0351,fidia,sw,employment_concept,damages payment,COMPENSATION,map_concept:COMPENSATION
+W0352,pension,en,employment_concept,retirement income,PENSION,map_concept:PENSION
+W0353,pensheni,sw,employment_concept,retirement income,PENSION,map_concept:PENSION
+W0354,NSSF,en,employment_concept,private pension fund,NSSF,map_concept:NSSF
+W0355,NSSF,sw,employment_concept,private pension fund,NSSF,map_concept:NSSF
+W0356,PSSSF,en,employment_concept,public pension fund,PSSSF,map_concept:PSSSF
+W0357,PSSSF,sw,employment_concept,public pension fund,PSSSF,map_concept:PSSSF
+W0358,NHIF,en,employment_concept,health insurance,NHIF,map_concept:NHIF
+W0359,NHIF,sw,employment_concept,health insurance,NHIF,map_concept:NHIF
+W0360,SHA,en,employment_concept,health insurance,SHA,map_concept:SHA
+W0361,SHA,sw,employment_concept,health insurance,SHA,map_concept:SHA
+W0362,CMA,en,employment_concept,mediation/arbitration commission,CMA,map_concept:CMA
+W0363,CMA,sw,employment_concept,mediation/arbitration commission,CMA,map_concept:CMA
+W0364,Labour Court,en,employment_concept,labour judicial body,LABOUR_COURT,map_concept:LABOUR_COURT
+W0365,Mahakama ya Kazi,sw,employment_concept,labour judicial body,LABOUR_COURT,map_concept:LABOUR_COURT
+W0366,mediation,en,employment_concept,facilitated settlement,MEDIATION,map_concept:MEDIATION
+W0367,upatanishi,sw,employment_concept,facilitated settlement,MEDIATION,map_concept:MEDIATION
+W0368,arbitration,en,employment_concept,binding adjudication,ARBITRATION,map_concept:ARBITRATION
+W0369,usuluhishi,sw,employment_concept,binding adjudication,ARBITRATION,map_concept:ARBITRATION
+W0370,complaint,en,employment_concept,formal grievance,COMPLAINT,map_concept:COMPLAINT
+W0371,malalamiko,sw,employment_concept,formal grievance,COMPLAINT,map_concept:COMPLAINT
+W0372,dispute,en,employment_concept,disagreement,DISPUTE,map_concept:DISPUTE
+W0373,mgogoro,sw,employment_concept,disagreement,DISPUTE,map_concept:DISPUTE
+W0374,hearing,en,employment_concept,disciplinary hearing,HEARING,map_concept:HEARING
+W0375,kusikilizwa,sw,employment_concept,disciplinary hearing,HEARING,map_concept:HEARING
+W0376,misconduct,en,employment_concept,wrongful conduct,MISCONDUCT,map_concept:MISCONDUCT
+W0377,utovu wa nidhamu,sw,employment_concept,wrongful conduct,MISCONDUCT,map_concept:MISCONDUCT
+W0378,incapacity,en,employment_concept,inability,INCAPACITY,map_concept:INCAPACITY
+W0379,ukosefu wa uwezo,sw,employment_concept,inability,INCAPACITY,map_concept:INCAPACITY
+W0380,reinstatement,en,employment_concept,return to work,REINSTATEMENT,map_concept:REINSTATEMENT
+W0381,kurudishwa,sw,employment_concept,return to work,REINSTATEMENT,map_concept:REINSTATEMENT
+W0382,certificate of service,en,employment_concept,service certificate,COS,map_concept:COS
+W0383,hati ya utumishi,sw,employment_concept,service certificate,COS,map_concept:COS
+W0384,payslip,en,employment_concept,wage record,PAYSLIP,map_concept:PAYSLIP
+W0385,slip ya mshahara,sw,employment_concept,wage record,PAYSLIP,map_concept:PAYSLIP
+W0386,PAYE,en,employment_concept,income tax deduction,PAYE,map_concept:PAYE
+W0387,PAYE,sw,employment_concept,income tax deduction,PAYE,map_concept:PAYE
+W0388,work permit,en,employment_concept,foreign worker authorisation,WORK_PERMIT,map_concept:WORK_PERMIT
+W0389,kibali cha kazi,sw,employment_concept,foreign worker authorisation,WORK_PERMIT,map_concept:WORK_PERMIT
+W0390,trade union,en,employment_concept,workers organisation,UNION,map_concept:UNION
+W0391,chama cha wafanyakazi,sw,employment_concept,workers organisation,UNION,map_concept:UNION
+W0392,strike,en,employment_concept,work stoppage,STRIKE,map_concept:STRIKE
+W0393,mgomo,sw,employment_concept,work stoppage,STRIKE,map_concept:STRIKE
+W0394,collective agreement,en,employment_concept,union-employer agreement,CBA,map_concept:CBA
+W0395,mkataba wa pamoja,sw,employment_concept,union-employer agreement,CBA,map_concept:CBA
+W0396,operational requirements,en,employment_concept,business-driven reason,OPERATIONAL,map_concept:OPERATIONAL
+W0397,mahitaji ya kibiashara,sw,employment_concept,business-driven reason,OPERATIONAL,map_concept:OPERATIONAL
+W0398,redundancy,en,employment_concept,operational layoff,REDUNDANCY,map_concept:REDUNDANCY
+W0399,operational layoff,sw,employment_concept,operational layoff,REDUNDANCY,map_concept:REDUNDANCY
+W0400,constructive dismissal,en,employment_concept,forced resignation,CONSTRUCTIVE_DISMISSAL,map_concept:CONSTRUCTIVE_DISMISSAL
+W0401,constructive dismissal,sw,employment_concept,forced resignation,CONSTRUCTIVE_DISMISSAL,map_concept:CONSTRUCTIVE_DISMISSAL
+W0402,warning letter,en,employment_concept,disciplinary notice,WARNING,map_concept:WARNING
+W0403,barua ya onyo,sw,employment_concept,disciplinary notice,WARNING,map_concept:WARNING
+W0404,show cause,en,employment_concept,explain charge,SHOW_CAUSE,map_concept:SHOW_CAUSE
+W0405,sababisha,sw,employment_concept,explain charge,SHOW_CAUSE,map_concept:SHOW_CAUSE
+W0406,absconding,en,employment_concept,unauthorised absence,ABSCONDING,map_concept:ABSCONDING
+W0407,kutoroka kazi,sw,employment_concept,unauthorised absence,ABSCONDING,map_concept:ABSCONDING
+W0408,public holiday,en,employment_concept,statutory holiday,PUBLIC_HOLIDAY,map_concept:PUBLIC_HOLIDAY
+W0409,sikukuu,sw,employment_concept,statutory holiday,PUBLIC_HOLIDAY,map_concept:PUBLIC_HOLIDAY
+W0410,rest day,en,employment_concept,weekly rest,REST_DAY,map_concept:REST_DAY
+W0411,siku ya mapumziko,sw,employment_concept,weekly rest,REST_DAY,map_concept:REST_DAY
+W0412,minimum wage,en,employment_concept,statutory minimum,MIN_WAGE,map_concept:MIN_WAGE
+W0413,kima cha chini,sw,employment_concept,statutory minimum,MIN_WAGE,map_concept:MIN_WAGE
+W0414,basic wage,en,employment_concept,ordinary pay,BASIC_WAGE,map_concept:BASIC_WAGE
+W0415,mshahara wa msingi,sw,employment_concept,ordinary pay,BASIC_WAGE,map_concept:BASIC_WAGE
+W0416,allowance,en,employment_concept,supplementary pay,ALLOWANCE,map_concept:ALLOWANCE
+W0417,posho,sw,employment_concept,supplementary pay,ALLOWANCE,map_concept:ALLOWANCE
+W0418,commission,en,employment_concept,sales-based pay,COMMISSION,map_concept:COMMISSION
+W0419,kamisheni,sw,employment_concept,sales-based pay,COMMISSION,map_concept:COMMISSION
+W0420,bonus,en,employment_concept,extra pay,BONUS,map_concept:BONUS
+W0421,bonasi,sw,employment_concept,extra pay,BONUS,map_concept:BONUS
+W0422,deduction,en,employment_concept,wage reduction,DEDUCTION,map_concept:DEDUCTION
+W0423,makato,sw,employment_concept,wage reduction,DEDUCTION,map_concept:DEDUCTION
+W0424,statutory deduction,en,employment_concept,required by law,STAT_DEDUCT,map_concept:STAT_DEDUCT
+W0425,makato ya kisheria,sw,employment_concept,required by law,STAT_DEDUCT,map_concept:STAT_DEDUCT
+W0426,written contract,en,employment_concept,formal contract,WRITTEN_CONTRACT,map_concept:WRITTEN_CONTRACT
+W0427,mkataba wa maandishi,sw,employment_concept,formal contract,WRITTEN_CONTRACT,map_concept:WRITTEN_CONTRACT
+W0428,oral contract,en,employment_concept,verbal contract,ORAL_CONTRACT,map_concept:ORAL_CONTRACT
+W0429,mkataba wa mdomo,sw,employment_concept,verbal contract,ORAL_CONTRACT,map_concept:ORAL_CONTRACT
+W0430,fixed-term,en,employment_concept,limited-duration,FIXED_TERM,map_concept:FIXED_TERM
+W0431,muda maalum,sw,employment_concept,limited-duration,FIXED_TERM,map_concept:FIXED_TERM
+W0432,permanent,en,employment_concept,indefinite,PERMANENT,map_concept:PERMANENT
+W0433,kudumu,sw,employment_concept,indefinite,PERMANENT,map_concept:PERMANENT
+W0434,part-time,en,employment_concept,reduced hours,PART_TIME,map_concept:PART_TIME
+W0435,muda mfupi,sw,employment_concept,reduced hours,PART_TIME,map_concept:PART_TIME
+W0436,full-time,en,employment_concept,standard hours,FULL_TIME,map_concept:FULL_TIME
+W0437,muda kamili,sw,employment_concept,standard hours,FULL_TIME,map_concept:FULL_TIME
+W0438,sad,en,emotion,feeling,SAD,empathy_response
+W0439,huzuni,sw,emotion,hisia,SAD,empathy_response
+W0440,happy,en,emotion,feeling,HAPPY,empathy_response
+W0441,furaha,sw,emotion,hisia,HAPPY,empathy_response
+W0442,angry,en,emotion,feeling,ANGRY,empathy_response
+W0443,hasira,sw,emotion,hisia,ANGRY,empathy_response
+W0444,confused,en,emotion,feeling,CONFUSED,empathy_response
+W0445,kuchanganyikiwa,sw,emotion,hisia,CONFUSED,empathy_response
+W0446,worried,en,emotion,feeling,WORRIED,empathy_response
+W0447,wasiwasi,sw,emotion,hisia,WORRIED,empathy_response
+W0448,scared,en,emotion,feeling,SCARED,empathy_response
+W0449,hofu,sw,emotion,hisia,SCARED,empathy_response
+W0450,frustrated,en,emotion,feeling,FRUSTRATED,empathy_response
+W0451,kufadhaika,sw,emotion,hisia,FRUSTRATED,empathy_response
+W0452,stressed,en,emotion,feeling,STRESSED,empathy_response
+W0453,msongo,sw,emotion,hisia,STRESSED,empathy_response
+W0454,hopeful,en,emotion,feeling,HOPEFUL,empathy_response
+W0455,matumaini,sw,emotion,hisia,HOPEFUL,empathy_response
+W0456,desperate,en,emotion,feeling,DESPERATE,empathy_response
+W0457,kukata tamaa,sw,emotion,hisia,DESPERATE,empathy_response
+W0458,urgent,en,emotion,feeling,URGENT,empathy_response
+W0459,haraka,sw,emotion,hisia,URGENT,empathy_response
+W0460,important,en,emotion,feeling,IMPORTANT,empathy_response
+W0461,muhimu,sw,emotion,hisia,IMPORTANT,empathy_response
+W0462,pay,en,verb_action,action,ACTION_PAY,
+W0463,kulipa,sw,verb_action,kitendo,ACTION_PAY,
+W0464,give,en,verb_action,action,ACTION_GIVE,
+W0465,kutoa,sw,verb_action,kitendo,ACTION_GIVE,
+W0466,take,en,verb_action,action,ACTION_TAKE,
+W0467,kuchukua,sw,verb_action,kitendo,ACTION_TAKE,
+W0468,want,en,verb_action,action,ACTION_WANT,
+W0469,kutaka,sw,verb_action,kitendo,ACTION_WANT,
+W0470,need,en,verb_action,action,ACTION_NEED,
+W0471,kuhitaji,sw,verb_action,kitendo,ACTION_NEED,
+W0472,have,en,verb_action,action,ACTION_HAVE,
+W0473,kuwa na,sw,verb_action,kitendo,ACTION_HAVE,
+W0474,ask,en,verb_action,action,ACTION_ASK,
+W0475,kuuliza,sw,verb_action,kitendo,ACTION_ASK,
+W0476,tell,en,verb_action,action,ACTION_TELL,
+W0477,kuambia,sw,verb_action,kitendo,ACTION_TELL,
+W0478,explain,en,verb_action,action,ACTION_EXPLAIN,
+W0479,kueleza,sw,verb_action,kitendo,ACTION_EXPLAIN,
+W0480,understand,en,verb_action,action,ACTION_UNDERSTAND,
+W0481,kuelewa,sw,verb_action,kitendo,ACTION_UNDERSTAND,
+W0482,help,en,verb_action,action,ACTION_HELP,
+W0483,kusaidia,sw,verb_action,kitendo,ACTION_HELP,
+W0484,file,en,verb_action,action,ACTION_FILE,
+W0485,kuwasilisha,sw,verb_action,kitendo,ACTION_FILE,
+W0486,complain,en,verb_action,action,ACTION_COMPLAIN,
+W0487,kulalamika,sw,verb_action,kitendo,ACTION_COMPLAIN,
+W0488,report,en,verb_action,action,ACTION_REPORT,
+W0489,kuripoti,sw,verb_action,kitendo,ACTION_REPORT,
+W0490,demand,en,verb_action,action,ACTION_DEMAND,
+W0491,kudai,sw,verb_action,kitendo,ACTION_DEMAND,
+W0492,refuse,en,verb_action,action,ACTION_REFUSE,
+W0493,kukataa,sw,verb_action,kitendo,ACTION_REFUSE,
+W0494,accept,en,verb_action,action,ACTION_ACCEPT,
+W0495,kukubali,sw,verb_action,kitendo,ACTION_ACCEPT,
+W0496,sign,en,verb_action,action,ACTION_SIGN,
+W0497,kusaini,sw,verb_action,kitendo,ACTION_SIGN,
+W0498,appeal,en,verb_action,action,ACTION_APPEAL,
+W0499,ku-appeal,sw,verb_action,kitendo,ACTION_APPEAL,
+W0500,calculate,en,verb_action,action,ACTION_CALCULATE,
+W0501,kuhesabu,sw,verb_action,kitendo,ACTION_CALCULATE,
+W0502,apply,en,verb_action,action,ACTION_APPLY,
+W0503,kuomba,sw,verb_action,kitendo,ACTION_APPLY,
+W0504,receive,en,verb_action,action,ACTION_RECEIVE,
+W0505,kupokea,sw,verb_action,kitendo,ACTION_RECEIVE,
+W0506,send,en,verb_action,action,ACTION_SEND,
+W0507,kutuma,sw,verb_action,kitendo,ACTION_SEND,
+W0508,attend,en,verb_action,action,ACTION_ATTEND,
+W0509,kuhudhuria,sw,verb_action,kitendo,ACTION_ATTEND,
+W0510,represent,en,verb_action,action,ACTION_REPRESENT,
+W0511,kuwakilisha,sw,verb_action,kitendo,ACTION_REPRESENT,
+W0512,one,en,number_time,quantity,NUM_1,
+W0513,moja,sw,number_time,kiasi,NUM_1,
+W0514,two,en,number_time,quantity,NUM_2,
+W0515,mbili,sw,number_time,kiasi,NUM_2,
+W0516,three,en,number_time,quantity,NUM_3,
+W0517,tatu,sw,number_time,kiasi,NUM_3,
+W0518,four,en,number_time,quantity,NUM_4,
+W0519,nne,sw,number_time,kiasi,NUM_4,
+W0520,five,en,number_time,quantity,NUM_5,
+W0521,tano,sw,number_time,kiasi,NUM_5,
+W0522,six,en,number_time,quantity,NUM_6,
+W0523,sita,sw,number_time,kiasi,NUM_6,
+W0524,seven,en,number_time,quantity,NUM_7,
+W0525,saba,sw,number_time,kiasi,NUM_7,
+W0526,eight,en,number_time,quantity,NUM_8,
+W0527,nane,sw,number_time,kiasi,NUM_8,
+W0528,nine,en,number_time,quantity,NUM_9,
+W0529,tisa,sw,number_time,kiasi,NUM_9,
+W0530,ten,en,number_time,quantity,NUM_10,
+W0531,kumi,sw,number_time,kiasi,NUM_10,
+W0532,month,en,number_time,quantity,UNIT_MONTH,
+W0533,mwezi,sw,number_time,kiasi,UNIT_MONTH,
+W0534,week,en,number_time,quantity,UNIT_WEEK,
+W0535,wiki,sw,number_time,kiasi,UNIT_WEEK,
+W0536,day,en,number_time,quantity,UNIT_DAY,
+W0537,siku,sw,number_time,kiasi,UNIT_DAY,
+W0538,year,en,number_time,quantity,UNIT_YEAR,
+W0539,mwaka,sw,number_time,kiasi,UNIT_YEAR,
+W0540,hour,en,number_time,quantity,UNIT_HOUR,
+W0541,saa,sw,number_time,kiasi,UNIT_HOUR,
