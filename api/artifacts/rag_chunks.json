@@ -1,0 +1,707 @@
+[
+  {
+    "id": "elra_s5",
+    "statute": "ELRA 2004",
+    "section": "s.5",
+    "topic": "child_labour",
+    "text_en": "The minimum age for employment is 14 years. A child between 14 and 18 may only be employed in light non-hazardous work outside school hours. Employment of a child under 14, or any child in hazardous work such as mining, factories or night shifts, is prohibited and is a criminal offence.",
+    "text_sw": "Umri wa chini kabisa wa kuajiriwa ni miaka 14. Mtoto kati ya miaka 14 na 18 anaweza kuajiriwa tu kwa kazi nyepesi isiyokuwa hatari nje ya masaa ya shule. Kuajiriwa kwa mtoto chini ya miaka 14, au mtoto yeyote katika kazi hatari kama uchimbaji, viwanda au zamu za usiku, ni marufuku na ni kosa la jinai.",
+    "citation": "ELRA 2004 s.5; Law of the Child Act 2009",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s7_discrimination",
+    "statute": "ELRA 2004",
+    "section": "s.7",
+    "topic": "discrimination",
+    "text_en": "Every employer must promote equal opportunity and eliminate discrimination on grounds of colour, nationality, tribe, place of origin, race, national origin, social status, political opinion, religion, sex, gender, pregnancy, marital status, family responsibility, disability, HIV/AIDS status, age, or station in life.",
+    "text_sw": "Kila mwajiri lazima akuze fursa sawa na kuondoa ubaguzi kwa misingi ya rangi, uraia, kabila, asili, jinsia, hali ya kijamii, siasa, dini, mimba, hali ya ndoa, majukumu ya familia, ulemavu, hali ya VVU/UKIMWI, umri, au hali ya maisha.",
+    "citation": "ELRA 2004 s.7",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s7_sexual_harassment",
+    "statute": "ELRA 2004",
+    "section": "s.7(3)",
+    "topic": "sexual_harassment",
+    "text_en": "Harassment of an employee, including sexual harassment, is a form of discrimination and is prohibited. Sexual harassment includes any unwelcome sexual advance, request for sexual favour, or other verbal or physical conduct of a sexual nature.",
+    "text_sw": "Unyanyasaji wa mfanyakazi, ikijumuisha unyanyasaji wa kingono, ni aina ya ubaguzi na ni marufuku. Unyanyasaji wa kingono unajumuisha ombi lolote la kingono lisilotakwa, ombi la fadhila za kingono, au mwenendo mwingine wa maneno au kimwili wa hali ya kingono.",
+    "citation": "ELRA 2004 s.7(3)",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s15_particulars",
+    "statute": "ELRA 2004",
+    "section": "s.15",
+    "topic": "employment_contract",
+    "text_en": "An employer must supply an employee with written particulars of employment within one month of starting work. Particulars must include: name and address of employer and employee, place of work, date of commencement, job description, wage, hours of work, and any other conditions agreed.",
+    "text_sw": "Mwajiri lazima ampatie mfanyakazi maelezo ya maandishi ya ajira ndani ya mwezi mmoja tangu kuanza kazi. Maelezo lazima yajumuishe: jina na anwani ya mwajiri na mfanyakazi, mahali pa kazi, tarehe ya kuanza, maelezo ya kazi, mshahara, masaa ya kazi, na masharti mengine yaliyokubaliwa.",
+    "citation": "ELRA 2004 s.15",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s19_hours",
+    "statute": "ELRA 2004",
+    "section": "s.19",
+    "topic": "hours_of_work",
+    "text_en": "Ordinary working hours must not exceed 45 hours per week or 9 hours per day. Every employee is entitled to at least ONE full day of rest per week — usually Sunday, but the day may be varied by agreement.",
+    "text_sw": "Masaa ya kazi ya kawaida hayapaswi kuzidi masaa 45 kwa wiki au masaa 9 kwa siku. Kila mfanyakazi ana haki ya angalau siku MOJA kamili ya mapumziko kwa wiki — kawaida Jumapili, lakini siku inaweza kubadilishwa kwa makubaliano.",
+    "citation": "ELRA 2004 s.19",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s19_overtime",
+    "statute": "ELRA 2004",
+    "section": "s.19(3)",
+    "topic": "overtime",
+    "text_en": "Overtime work must be paid at 1.5 times (150 %) the normal hourly rate on weekdays, and 2 times (200 %) the normal hourly rate on rest days and public holidays. Total overtime cannot exceed 50 hours in any 4-week cycle.",
+    "text_sw": "Kazi ya muda wa ziada lazima ilipwe mara 1.5 (150 %) ya kiwango cha kawaida cha saa siku za kazi, na mara 2 (200 %) ya kiwango cha kawaida siku za mapumziko na sikukuu za kitaifa. Jumla ya muda wa ziada usizidi masaa 50 katika mzunguko wowote wa wiki 4.",
+    "citation": "ELRA 2004 s.19(3)",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s20_holiday_pay",
+    "statute": "ELRA 2004",
+    "section": "s.20",
+    "topic": "rest_day_pay",
+    "text_en": "Work performed on a rest day or public holiday must be paid at DOUBLE the normal wage rate. Requiring work every day of the week without either a rest day or premium pay is unlawful.",
+    "text_sw": "Kazi inayofanywa siku ya mapumziko au sikukuu ya kitaifa lazima ilipwe MARA MBILI ya mshahara wa kawaida. Kuhitaji kazi kila siku ya wiki bila siku ya mapumziko au malipo ya juu ni kinyume cha sheria.",
+    "citation": "ELRA 2004 s.20",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s29_annual_leave",
+    "statute": "ELRA 2004",
+    "section": "s.29",
+    "topic": "annual_leave",
+    "text_en": "Every employee is entitled to at least 28 CONSECUTIVE days of paid annual leave per leave cycle (one year of continuous employment). Public holidays that fall inside the leave period do not count as leave. Leave must be taken within 6 months of accruing.",
+    "text_sw": "Kila mfanyakazi ana haki ya angalau siku 28 MFULULIZO za likizo ya mwaka yenye malipo kwa mzunguko (mwaka mmoja wa ajira endelevu). Sikukuu za kitaifa zinazoingia ndani ya likizo hazihesabiwi kama likizo. Likizo ichukuliwe ndani ya miezi 6 baada ya kupatikana.",
+    "citation": "ELRA 2004 s.29",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s32_sick_leave",
+    "statute": "ELRA 2004",
+    "section": "s.32",
+    "topic": "sick_leave",
+    "text_en": "An employee is entitled to 63 days of sick leave per leave cycle: 28 days on FULL pay, then 28 days on HALF pay, then unpaid leave for any remaining days up to 63. A medical certificate from a registered practitioner is required. Dismissal for taking valid sick leave is unfair.",
+    "text_sw": "Mfanyakazi ana haki ya siku 63 za likizo ya ugonjwa kwa mzunguko: siku 28 malipo KAMILI, kisha siku 28 NUSU malipo, kisha likizo isiyo na malipo kwa siku zilizosalia hadi 63. Cheti cha daktari aliyeandikishwa kinahitajika. Kufukuzwa kwa kuchukua likizo halali ya ugonjwa ni bila haki.",
+    "citation": "ELRA 2004 s.32",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s33_maternity",
+    "statute": "ELRA 2004",
+    "section": "s.33",
+    "topic": "maternity_leave",
+    "text_en": "A female employee is entitled to 84 days of paid maternity leave per leave cycle, and 98 days in the case of multiple births (twins, triplets). Maternity leave may commence up to 4 weeks before the expected date of delivery. Dismissal for taking maternity leave is automatically unfair.",
+    "text_sw": "Mfanyakazi wa kike ana haki ya siku 84 za likizo ya uzazi yenye malipo kwa mzunguko, na siku 98 iwapo amejifungua watoto wengi (mapacha, watatu). Likizo ya uzazi inaweza kuanza wiki 4 kabla ya tarehe iliyotarajiwa ya kujifungua. Kufukuzwa kwa kuchukua likizo ya uzazi ni bila haki moja kwa moja.",
+    "citation": "ELRA 2004 s.33",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s34_paternity",
+    "statute": "ELRA 2004",
+    "section": "s.34",
+    "topic": "paternity_leave",
+    "text_en": "A male employee is entitled to 3 days of paid paternity leave per leave cycle, to be taken within 7 days of the child's birth.",
+    "text_sw": "Mfanyakazi wa kiume ana haki ya siku 3 za likizo ya baba yenye malipo kwa mzunguko, kuchukuliwa ndani ya siku 7 baada ya kuzaliwa kwa mtoto.",
+    "citation": "ELRA 2004 s.34",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s36_unfair_termination",
+    "statute": "ELRA 2004",
+    "section": "s.36",
+    "topic": "unfair_termination",
+    "text_en": "Termination of employment is unfair unless the employer proves BOTH (a) a fair reason (misconduct, incapacity, or operational requirements) AND (b) a fair procedure. Missing either limb makes the dismissal unfair. Remedies include reinstatement, re-engagement, or compensation.",
+    "text_sw": "Kusitisha ajira ni bila haki isipokuwa mwajiri athibitishe VYOTE (a) sababu halali (utovu wa nidhamu, kutokuwa na uwezo, au mahitaji ya kiuchumi) NA (b) utaratibu wa haki. Kukosa upande mmoja kunafanya kufukuzwa kuwa bila haki. Suluhu ni pamoja na kurudishwa kazini, kuajiriwa upya, au fidia.",
+    "citation": "ELRA 2004 s.36",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s38_operational",
+    "statute": "ELRA 2004",
+    "section": "s.38",
+    "topic": "retrenchment_procedure",
+    "text_en": "Before terminating for operational requirements (retrenchment), the employer must (1) give written notice of the reasons, (2) consult with employees and any recognised union on alternatives such as transfer, retraining, or reduced hours, and (3) apply fair selection criteria. Skipping consultation makes the retrenchment procedurally unfair.",
+    "text_sw": "Kabla ya kusitisha kwa mahitaji ya kiuchumi (retrenchment), mwajiri lazima (1) atoe notisi ya maandishi kuhusu sababu, (2) ashauriane na wafanyakazi na chama chochote kilichotambuliwa kuhusu mbadala kama uhamisho, mafunzo upya, au masaa yaliyopunguzwa, na (3) atumie vigezo vya haki vya uteuzi. Kuruka mashauriano kunafanya kufukuzwa kuwa bila haki kwa utaratibu.",
+    "citation": "ELRA 2004 s.38",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s41_notice",
+    "statute": "ELRA 2004",
+    "section": "s.41",
+    "topic": "notice_period",
+    "text_en": "Minimum notice periods on termination: 7 days for a daily-paid employee, 4 days for a weekly-paid employee, 28 days for a monthly-paid employee. Notice may be given by either party. Termination without notice requires the employer to pay 'notice pay' equal to the wage for the notice period.",
+    "text_sw": "Muda wa chini wa notisi wakati wa kusitisha: siku 7 kwa mfanyakazi anayelipwa kila siku, siku 4 kwa anayelipwa kila wiki, siku 28 kwa anayelipwa kila mwezi. Notisi inaweza kutolewa na upande wowote. Kusitisha bila notisi kunahitaji mwajiri alipe 'malipo ya notisi' sawa na mshahara wa kipindi cha notisi.",
+    "citation": "ELRA 2004 s.41",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s42_severance",
+    "statute": "ELRA 2004",
+    "section": "s.42",
+    "topic": "severance_pay",
+    "text_en": "Severance pay is 7 DAYS of basic wage per COMPLETED YEAR of continuous service, capped at 10 completed years. It is payable when the employer terminates for operational requirements (retrenchment) or when the employee dies in service. Severance is TAX-FREE.",
+    "text_sw": "Kifuta jasho ni SIKU 7 za mshahara wa msingi kwa kila MWAKA uliokamilika wa utumishi endelevu, kikomo miaka 10. Hulipwa pale mwajiri anaposhituhu kwa mahitaji ya kiuchumi (retrenchment) au mfanyakazi akifariki katika utumishi. Kifuta jasho HAKIKATWI KODI.",
+    "citation": "ELRA 2004 s.42",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s27_wages",
+    "statute": "ELRA 2004",
+    "section": "s.27",
+    "topic": "wage_payment",
+    "text_en": "Wages must be paid at intervals not longer than one month, in legal tender (or by bank transfer with employee consent). No unauthorised deductions may be made. On termination, the employer must pay all outstanding wages and accrued benefits on the LAST WORKING DAY.",
+    "text_sw": "Mshahara lazima ulipwe kwa muda usiozidi mwezi mmoja, kwa fedha halali (au uhamisho wa benki kwa idhini ya mfanyakazi). Hakuna makato yasiyoruhusiwa yanayoruhusiwa. Wakati wa kusitisha, mwajiri lazima alipe mshahara wowote uliobaki na faida zilizokusanywa SIKU YA MWISHO YA KAZI.",
+    "citation": "ELRA 2004 s.27",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s44_certificate",
+    "statute": "ELRA 2004",
+    "section": "s.44",
+    "topic": "certificate_of_service",
+    "text_en": "On termination, every employer MUST issue a certificate of service stating: employee's name, dates of employment, job title held, and the reason for termination. This is a legal duty, not discretionary. Refusal is grounds for a CMA claim.",
+    "text_sw": "Wakati wa kusitisha, kila mwajiri LAZIMA atoe cheti cha utumishi kinachoeleza: jina la mfanyakazi, tarehe za ajira, cheo alichoshika, na sababu ya kusitisha. Ni wajibu wa kisheria, si hiari. Kukataa ni sababu ya kufungua kesi CMA.",
+    "citation": "ELRA 2004 s.44",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s9_freedom_of_association",
+    "statute": "ELRA 2004",
+    "section": "s.9",
+    "topic": "union_rights",
+    "text_en": "Every employee has the right to form, join and participate in the lawful activities of a trade union. An employer must not prevent, threaten, victimise, or discriminate against an employee for exercising these rights.",
+    "text_sw": "Kila mfanyakazi ana haki ya kuunda, kujiunga na kushiriki katika shughuli halali za chama cha wafanyakazi. Mwajiri hapaswi kumzuia, kumtisha, kumdhulumu, au kumbagua mfanyakazi kwa kutumia haki hizi.",
+    "citation": "ELRA 2004 s.9",
+    "source": "seed"
+  },
+  {
+    "id": "elra_s75_strike",
+    "statute": "ELRA 2004",
+    "section": "s.75-80",
+    "topic": "strike_procedure",
+    "text_en": "A lawful strike requires: (1) the dispute is over a matter of INTEREST (not rights), (2) the dispute has been referred to CMA and remains unresolved after mediation, (3) 48 hours' written notice is given to the employer before the strike begins. Employees in essential services (hospitals, water, air-traffic control) may NOT strike. Unlawful strikes are grounds for dismissal.",
+    "text_sw": "Mgomo halali unahitaji: (1) mgogoro uhusuwe MASLAHI (si haki), (2) mgogoro uwe umewasilishwa CMA na kubaki bila kutatuliwa baada ya upatanishi, (3) notisi ya maandishi ya masaa 48 itolewe kwa mwajiri kabla ya mgomo. Wafanyakazi wa huduma muhimu (hospitali, maji, udhibiti wa anga) HAWANA haki ya kugoma. Migomo isiyo halali ni sababu ya kufukuzwa.",
+    "citation": "ELRA 2004 s.75-80",
+    "source": "seed"
+  },
+  {
+    "id": "elra_cma_form1_time_limit",
+    "statute": "ELRA 2004",
+    "section": "s.86",
+    "topic": "cma_filing",
+    "text_en": "A complaint of unfair termination or unfair labour practice must be referred to CMA within 60 DAYS of the date on which the dispute arose. Late filing requires CMA to grant condonation, which is not guaranteed. Use CMA Form 1.",
+    "text_sw": "Malalamiko ya kufukuzwa bila haki au vitendo visivyo vya haki vya kazi lazima yawasilishwe CMA ndani ya SIKU 60 tangu tarehe mgogoro ulipotokea. Kuchelewa kunahitaji CMA itoe msamaha, ambao haujahakikishwa. Tumia Fomu Na. 1 ya CMA.",
+    "citation": "ELRA 2004 s.86",
+    "source": "seed"
+  },
+  {
+    "id": "gn42_2007_probation",
+    "statute": "Code of Good Practice, GN 42/2007",
+    "section": "Rule 8",
+    "topic": "probation",
+    "text_en": "A probationary period should not exceed 6 months. During probation the employer must still follow a fair procedure before dismissal — give the employee a warning, allow an opportunity to respond, and then decide. Probation is not a licence to dismiss arbitrarily.",
+    "text_sw": "Muda wa probation haupaswi kuzidi miezi 6. Wakati wa probation mwajiri lazima afuate utaratibu wa haki kabla ya kufukuzwa — ampe mfanyakazi onyo, aruhusu nafasi ya kujibu, kisha aamue. Probation si idhini ya kufukuza kiholela.",
+    "citation": "Code of Good Practice, GN 42/2007, Rule 8",
+    "source": "seed"
+  },
+  {
+    "id": "gn42_disciplinary_hearing",
+    "statute": "Code of Good Practice, GN 42/2007",
+    "section": "Rule 13",
+    "topic": "disciplinary_procedure",
+    "text_en": "Before dismissing for misconduct, the employer must (1) notify the employee in writing of the allegation, (2) give reasonable time to prepare, (3) hold a hearing at which the employee may state their case, call witnesses, and be represented by a fellow employee or union official, (4) issue a written decision with reasons.",
+    "text_sw": "Kabla ya kumfukuza kwa utovu wa nidhamu, mwajiri lazima (1) amjulishe mfanyakazi kimaandishi kuhusu shtaka, (2) atoe muda wa kutosha wa kujiandaa, (3) afanye kikao ambapo mfanyakazi anaweza kutoa maelezo, kuita mashahidi, na kuwakilishwa na mfanyakazi mwenzake au afisa wa chama, (4) atoe uamuzi wa maandishi na sababu.",
+    "citation": "Code of Good Practice, GN 42/2007, Rule 13",
+    "source": "seed"
+  },
+  {
+    "id": "gn42_gross_misconduct",
+    "statute": "Code of Good Practice, GN 42/2007",
+    "section": "Rule 12",
+    "topic": "gross_misconduct",
+    "text_en": "Gross misconduct — such as theft, fraud, violence, or gross insubordination — may justify summary dismissal without notice, but ONLY after a disciplinary hearing. Ordinary misconduct (lateness, minor errors) requires a graduated warning process first: verbal warning, written warning, final written warning.",
+    "text_sw": "Utovu mkubwa wa nidhamu — kama wizi, udanganyifu, ghasia, au dharau kubwa — unaweza kuhalalisha kufukuzwa mara moja bila notisi, LAKINI TU baada ya kikao cha nidhamu. Utovu wa kawaida (kuchelewa, makosa madogo) unahitaji mchakato wa maonyo wa ngazi kwanza: onyo la mdomo, onyo la maandishi, onyo la mwisho la maandishi.",
+    "citation": "Code of Good Practice, GN 42/2007, Rule 12",
+    "source": "seed"
+  },
+  {
+    "id": "wca_2008_report_injury",
+    "statute": "WCA 2008",
+    "section": "s.12",
+    "topic": "workplace_injury",
+    "text_en": "An employee injured at work or contracting an occupational disease must report to the employer, and the employer must notify the Workers' Compensation Fund (WCF) within 7 days. Compensation claims must be lodged with WCF within 12 MONTHS of the injury.",
+    "text_sw": "Mfanyakazi aliyeumia kazini au aliyeambukizwa maradhi ya kazini lazima aripoti kwa mwajiri, na mwajiri lazima ajulishe Mfuko wa Fidia ya Wafanyakazi (WCF) ndani ya siku 7. Madai ya fidia lazima yawasilishwe WCF ndani ya MIEZI 12 tangu jeraha.",
+    "citation": "WCA 2008 s.12",
+    "source": "seed"
+  },
+  {
+    "id": "wca_2008_compensation",
+    "statute": "WCA 2008",
+    "section": "s.19-22",
+    "topic": "injury_compensation",
+    "text_en": "WCF compensation covers: (1) full medical expenses for treatment, (2) temporary disability payments at 60 % of wages while unable to work, (3) permanent disability lump sum based on medical assessment of impairment, (4) survivors' benefits in case of death.",
+    "text_sw": "Fidia ya WCF inagharamia: (1) gharama zote za matibabu, (2) malipo ya ulemavu wa muda kwa asilimia 60 ya mshahara wakati hawezi kufanya kazi, (3) malipo ya jumla ya ulemavu wa kudumu kwa kuzingatia tathmini ya kimatibabu, (4) faida za waathirika wa kifo.",
+    "citation": "WCA 2008 s.19-22",
+    "source": "seed"
+  },
+  {
+    "id": "osha_2003_employer_duty",
+    "statute": "OSHA 2003",
+    "section": "s.16",
+    "topic": "workplace_safety",
+    "text_en": "Every employer has a general duty to ensure, so far as reasonably practicable, the safety, health, and welfare of all employees. This includes providing safe plant and systems of work, personal protective equipment (PPE), information and training on hazards, and a safe working environment.",
+    "text_sw": "Kila mwajiri ana wajibu wa jumla wa kuhakikisha, kwa kadri inavyowezekana, usalama, afya, na ustawi wa wafanyakazi wote. Hii inajumuisha kutoa mitambo na mifumo salama ya kazi, vifaa vya kujikinga (PPE), taarifa na mafunzo kuhusu hatari, na mazingira salama ya kazi.",
+    "citation": "OSHA 2003 s.16",
+    "source": "seed"
+  },
+  {
+    "id": "osha_2003_employee_duty",
+    "statute": "OSHA 2003",
+    "section": "s.19",
+    "topic": "employee_safety_duty",
+    "text_en": "An employee must (1) take reasonable care of their own safety and that of others, (2) cooperate with the employer on safety matters, (3) not intentionally interfere with or misuse anything provided in the interests of health and safety, (4) report unsafe conditions to the employer.",
+    "text_sw": "Mfanyakazi lazima (1) achukue tahadhari zinazofaa kwa usalama wake na wa wengine, (2) ashirikiane na mwajiri kuhusu masuala ya usalama, (3) asiingilie kwa makusudi au atumie vibaya kitu chochote kilichotolewa kwa maslahi ya afya na usalama, (4) aripoti hali zisizo salama kwa mwajiri.",
+    "citation": "OSHA 2003 s.19",
+    "source": "seed"
+  },
+  {
+    "id": "non_citizens_2015_work_permit",
+    "statute": "Non-Citizens (Employment Regulation) Act 2015",
+    "section": "s.6",
+    "topic": "work_permit",
+    "text_en": "A non-citizen cannot be employed in Tanzania without a work permit issued by the Labour Commissioner. The employer must demonstrate that the skills are not readily available in the local labour market. Permits are typically valid for 2 years, renewable. A residence permit from immigration is required in addition.",
+    "text_sw": "Mtu asiye raia hawezi kuajiriwa Tanzania bila kibali cha kazi kilichotolewa na Kamishna wa Kazi. Mwajiri lazima athibitishe kwamba ujuzi haupatikani kwa urahisi katika soko la ndani la kazi. Vibali kawaida vinatumika kwa miaka 2, vinaweza kuhuishwa. Kibali cha ukazi kutoka uhamiaji kinahitajika pia.",
+    "citation": "Non-Citizens (Employment Regulation) Act 2015 s.6",
+    "source": "seed"
+  },
+  {
+    "id": "cma_arbitration_process",
+    "statute": "ELRA 2004 + LIA 2004",
+    "section": "s.86-88",
+    "topic": "cma_process",
+    "text_en": "The CMA process has three stages: (1) MEDIATION — a mediator helps the parties reach voluntary settlement, typically within 30 days; (2) ARBITRATION — if mediation fails, an arbitrator conducts a formal hearing and issues a binding decision; (3) APPEAL — the award may be reviewed by the Labour Court on limited grounds (jurisdiction, procedural fairness, gross irregularity).",
+    "text_sw": "Mchakato wa CMA una hatua tatu: (1) UPATANISHI — mpatanishi anasaidia pande kufikia makubaliano ya hiari, kawaida ndani ya siku 30; (2) USULUHISHI — kama upatanishi utashindikana, msuluhishi anafanya kikao rasmi na kutoa uamuzi wenye kufunga; (3) RUFAA — uamuzi unaweza kupitiwa upya na Mahakama ya Kazi kwa misingi finyu (mamlaka, haki ya utaratibu, uvunjifu mkubwa).",
+    "citation": "ELRA 2004 s.86-88",
+    "source": "seed"
+  },
+  {
+    "id": "cma_remedies",
+    "statute": "ELRA 2004",
+    "section": "s.40",
+    "topic": "unfair_termination_remedies",
+    "text_en": "If the CMA or Labour Court finds a termination was unfair, the remedies are (1) REINSTATEMENT — return to the same job with back-pay; (2) RE-ENGAGEMENT — a comparable new role; (3) COMPENSATION — up to 12 months' wages, or more where reinstatement is impossible. The employee may choose the preferred remedy.",
+    "text_sw": "Iwapo CMA au Mahakama ya Kazi itakuta kufukuzwa kulikuwa bila haki, suluhu ni (1) KURUDISHWA KAZINI — kurudi kazi hiyo hiyo na malipo ya nyuma; (2) KUAJIRIWA UPYA — nafasi mpya inayolingana; (3) FIDIA — hadi mishahara ya miezi 12, au zaidi pale kurudishwa haikuwezekani. Mfanyakazi anaweza kuchagua suluhu.",
+    "citation": "ELRA 2004 s.40",
+    "source": "seed"
+  },
+  {
+    "id": "nssf_contributions",
+    "statute": "NSSF Act 1997",
+    "section": "s.11-15",
+    "topic": "nssf",
+    "text_en": "Every private-sector employer must register with the National Social Security Fund and remit contributions of 20 % of gross wages monthly: 10 % from the employer and 10 % deducted from the employee. Non-remittance is a criminal offence and attracts penalties.",
+    "text_sw": "Kila mwajiri wa sekta binafsi lazima ajisajili na NSSF na kulipa michango ya 20 % ya mshahara ghafi kila mwezi: 10 % kutoka mwajiri na 10 % kukatwa kutoka mfanyakazi. Kutolipa ni kosa la jinai na kunaathiri adhabu.",
+    "citation": "NSSF Act 1997 s.11-15",
+    "source": "seed"
+  },
+  {
+    "id": "pdpa_2022_hr_data",
+    "statute": "Personal Data Protection Act 2022",
+    "section": "s.5-8",
+    "topic": "employee_data_privacy",
+    "text_en": "An employer processing employee personal data (payroll, medical, biometric, background checks) must (1) obtain the employee's consent or another lawful basis, (2) collect only what is necessary, (3) keep the data secure, (4) not share with third parties without permission, and (5) allow the employee to access, correct, or erase their data.",
+    "text_sw": "Mwajiri anayeshughulikia data binafsi za mfanyakazi (mshahara, matibabu, biometric, uchunguzi wa historia) lazima (1) apate idhini ya mfanyakazi au msingi mwingine wa kisheria, (2) akusanye tu kile kinachohitajika, (3) ahifadhi data kwa usalama, (4) asishiriki na watu wa tatu bila idhini, na (5) amruhusu mfanyakazi kupata, kurekebisha, au kufuta data yake.",
+    "citation": "Personal Data Protection Act 2022 s.5-8",
+    "source": "seed"
+  },
+  {
+    "id": "elra_constructive_dismissal",
+    "statute": "ELRA 2004 + case law",
+    "section": "s.36 (interpretation)",
+    "topic": "constructive_dismissal",
+    "text_en": "Constructive dismissal occurs where the employer's conduct is so serious that it fundamentally breaches the employment contract, leaving the employee no reasonable alternative but to resign. Examples: unilateral pay cut, unjustified demotion, sustained harassment, forced transfer. The law treats it as an unfair dismissal by the employer.",
+    "text_sw": "Constructive dismissal hutokea pale mwenendo wa mwajiri ni mzito kiasi cha kuvunja msingi wa mkataba wa ajira, na kumwacha mfanyakazi bila mbadala mzuri isipokuwa kujiuzulu. Mifano: kupunguza mshahara bila makubaliano, kushusha cheo bila sababu, unyanyasaji wa muda mrefu, uhamisho wa lazima. Sheria inaichukulia kama kufukuzwa bila haki na mwajiri.",
+    "citation": "ELRA 2004 s.36; case law of the Labour Court",
+    "source": "seed"
+  },
+  {
+    "id": "elra_pregnancy_protection",
+    "statute": "ELRA 2004",
+    "section": "s.7 + s.36",
+    "topic": "pregnancy_discrimination",
+    "text_en": "Dismissal, demotion, or unfavourable treatment because of pregnancy is AUTOMATICALLY unfair — the employer cannot justify it on operational or performance grounds. The remedy is reinstatement plus damages, and the pregnant employee retains her 84-day maternity leave entitlement.",
+    "text_sw": "Kufukuzwa, kushushwa cheo, au kutendewa vibaya kwa sababu ya mimba ni bila haki MOJA KWA MOJA — mwajiri hawezi kujitetea kwa misingi ya kiuchumi au utendaji. Suluhu ni kurudishwa kazini pamoja na fidia, na mfanyakazi mwenye mimba anahifadhi haki yake ya siku 84 za likizo ya uzazi.",
+    "citation": "ELRA 2004 s.7, s.36",
+    "source": "seed"
+  },
+  {
+    "id": "workplace_violence_criminal",
+    "statute": "Penal Code Cap 16 + ELRA 2004",
+    "section": "assault provisions",
+    "topic": "workplace_violence",
+    "text_en": "Physical assault by an employer or co-worker is BOTH a criminal offence (Penal Code assault provisions) and a serious labour matter (ELRA s.36). Take three parallel steps: (1) medical report + photographic evidence; (2) police complaint within 24 hours for the criminal case; (3) CMA Form 1 within 60 days for the labour claim — you may seek constructive dismissal with full severance.",
+    "text_sw": "Kupigwa kimwili na mwajiri au mfanyakazi mwenzako ni kosa la jinai (Kanuni ya Adhabu) NA suala kubwa la kazi (ELRA s.36). Chukua hatua tatu sambamba: (1) taarifa ya matibabu + ushahidi wa picha; (2) malalamiko polisi ndani ya masaa 24 kwa kesi ya jinai; (3) Fomu Na. 1 ya CMA ndani ya siku 60 kwa madai ya kazi — unaweza kudai constructive dismissal na kifuta jasho kamili.",
+    "citation": "Penal Code Cap 16; ELRA 2004 s.36, s.42",
+    "source": "seed"
+  },
+  {
+    "id": "minimum_wage_2025",
+    "statute": "GN 605A/2025",
+    "section": "wage schedule",
+    "topic": "minimum_wage",
+    "text_en": "The 2025 sector-specific statutory minimum wages (per month, TZS): agriculture 150,000; domestic work 130,000; hotel/catering 200,000; private security 250,000; industrial/manufacturing 240,000; mining 400,000; transport 260,000; commercial trade 200,000; energy/telecoms 400,000. Employers paying below the sector minimum face TZS 500,000 fine per employee per month.",
+    "text_sw": "Mishahara ya chini ya kisheria ya 2025 (kila mwezi, TZS): kilimo 150,000; kazi za nyumbani 130,000; hoteli/upishi 200,000; usalama binafsi 250,000; viwanda/utengenezaji 240,000; uchimbaji 400,000; usafirishaji 260,000; biashara 200,000; nishati/mawasiliano 400,000. Waajiri wanaolipa chini ya kiwango cha sekta wanakabiliwa na faini ya TZS 500,000 kwa mfanyakazi kwa mwezi.",
+    "citation": "GN 605A of 2025",
+    "source": "seed"
+  },
+  {
+    "id": "elra_annual_leave_pay",
+    "statute": "ELRA 2004",
+    "section": "s.30",
+    "topic": "leave_pay",
+    "text_en": "Annual leave must be paid at the ordinary wage rate. Payment for annual leave must be made BEFORE the employee begins the leave, not at the end. An employee whose employment terminates before taking accrued leave must be paid in lieu on the last working day.",
+    "text_sw": "Likizo ya mwaka lazima ilipwe kwa kiwango cha kawaida cha mshahara. Malipo ya likizo ya mwaka lazima yafanyike KABLA mfanyakazi hajaanza likizo, si mwisho. Mfanyakazi ambaye ajira yake inaisha kabla ya kuchukua likizo iliyokusanywa lazima alipwe fidia yake siku ya mwisho ya kazi.",
+    "citation": "ELRA 2004 s.30",
+    "source": "seed"
+  },
+  {
+    "id": "elra_transfer_consent",
+    "statute": "ELRA 2004",
+    "section": "s.15 + case law",
+    "topic": "transfer_dispute",
+    "text_en": "A transfer that materially changes the employee's location, role, or pay requires the employee's consent unless the contract EXPLICITLY reserves the right to transfer. A unilateral transfer may amount to constructive dismissal: the employee can refuse and file CMA Form 1, or resign and claim severance + damages.",
+    "text_sw": "Uhamisho unaobadilisha kimsingi mahali, cheo, au mshahara wa mfanyakazi unahitaji idhini ya mfanyakazi isipokuwa mkataba UNARUHUSU wazi haki ya kuhamisha. Uhamisho wa lazima unaweza kuwa constructive dismissal: mfanyakazi anaweza kukataa na kufungua Fomu Na. 1 ya CMA, au kujiuzulu na kudai kifuta jasho + fidia.",
+    "citation": "ELRA 2004 s.15; case law",
+    "source": "seed"
+  },
+  {
+    "id": "elra_final_pay",
+    "statute": "ELRA 2004",
+    "section": "s.27 + s.42",
+    "topic": "final_pay",
+    "text_en": "On termination, the employer must pay ALL final entitlements on the LAST WORKING DAY: (1) outstanding wages up to the last day; (2) accrued unused annual leave in cash; (3) pro-rata bonus if contractual; (4) severance under s.42 if applicable; (5) notice pay if terminated without notice; (6) any contractual gratuity. Delays beyond 7 days trigger a labour offence.",
+    "text_sw": "Wakati wa kusitisha, mwajiri lazima alipe haki zote za mwisho SIKU YA MWISHO YA KAZI: (1) mshahara wowote uliobaki hadi siku ya mwisho; (2) likizo ya mwaka isiyotumika kwa fedha; (3) bonasi ya sehemu kama iko kwenye mkataba; (4) kifuta jasho chini ya s.42 kama inatumika; (5) malipo ya notisi kama umefukuzwa bila notisi; (6) kiinua-mgongo kama kimo kwenye mkataba. Kuchelewa zaidi ya siku 7 kunazua kosa la kazi.",
+    "citation": "ELRA 2004 s.27, s.42",
+    "source": "seed"
+  },
+  {
+    "id": "csv_0",
+    "topic": "Unfair termination",
+    "citation": "ELRA 2004 s.36 (LLA 4/2025)",
+    "source": "csv",
+    "text_en": "Termination is unfair if the employer fails to prove valid reason, fair reason, and fair procedure."
+  },
+  {
+    "id": "csv_15",
+    "topic": "Kufukuzwa bila haki",
+    "citation": "ELRA 2004 s.36 (LLA 4/2025)",
+    "source": "csv",
+    "text_sw": "Kufukuzwa ni bila haki iwapo mwajiri ameshindwa kuthibitisha sababu halali, sababu ya haki, na utaratibu wa haki."
+  },
+  {
+    "id": "csv_1350",
+    "topic": "Severance pay",
+    "citation": "ELRA 2004 s.42",
+    "source": "csv",
+    "text_en": "7 days basic wage × min(years_of_service, 10)."
+  },
+  {
+    "id": "csv_1365",
+    "topic": "Kifuta jasho",
+    "citation": "ELRA 2004 s.42",
+    "source": "csv",
+    "text_sw": "Siku 7 za mshahara × min(miaka_ya_kazi, 10)."
+  },
+  {
+    "id": "csv_2700",
+    "topic": "Notice period",
+    "citation": "ELRA 2004 s.41",
+    "source": "csv",
+    "text_en": "7 days first month; 4 days daily/weekly; 28 days monthly."
+  },
+  {
+    "id": "csv_2715",
+    "topic": "Notisi",
+    "citation": "ELRA 2004 s.41",
+    "source": "csv",
+    "text_sw": "Siku 7 mwezi wa kwanza; siku 4 siku/wiki; siku 28 mwezi."
+  },
+  {
+    "id": "csv_4065",
+    "topic": "Likizo ya mwaka",
+    "citation": "ELRA 2004 s.29",
+    "source": "csv",
+    "text_sw": "Siku 28 mfululizo kwa mzunguko wa miezi 12."
+  },
+  {
+    "id": "csv_5400",
+    "topic": "Sick leave",
+    "citation": "ELRA 2004 s.32",
+    "source": "csv",
+    "text_en": "Up to 126 days per 3-year cycle (63 full + 63 half pay)."
+  },
+  {
+    "id": "csv_5415",
+    "topic": "Likizo ya ugonjwa",
+    "citation": "ELRA 2004 s.32",
+    "source": "csv",
+    "text_sw": "Hadi siku 126 kwa miaka 3 (63 kamili + 63 nusu)."
+  },
+  {
+    "id": "csv_6750",
+    "topic": "Maternity leave",
+    "citation": "ELRA 2004 s.33 (LLA 4/2025)",
+    "source": "csv",
+    "text_en": "84 days paid (98 for multiples). Premature: extra to 40 weeks."
+  },
+  {
+    "id": "csv_6765",
+    "topic": "Likizo ya uzazi",
+    "citation": "ELRA 2004 s.33 (LLA 4/2025)",
+    "source": "csv",
+    "text_sw": "Siku 84 zenye malipo (98 mapacha). Premature: ziada hadi wiki 40."
+  },
+  {
+    "id": "csv_8100",
+    "topic": "Paternity leave",
+    "citation": "ELRA 2004 s.34 (LLA 4/2025)",
+    "source": "csv",
+    "text_en": "3 days within 7 days of birth. Premature: extra 7 days."
+  },
+  {
+    "id": "csv_8115",
+    "topic": "Likizo ya baba",
+    "citation": "ELRA 2004 s.34 (LLA 4/2025)",
+    "source": "csv",
+    "text_sw": "Siku 3 ndani ya siku 7. Premature: siku 7 za ziada."
+  },
+  {
+    "id": "csv_9465",
+    "topic": "Saa za ziada",
+    "citation": "ELRA 2004 s.19",
+    "source": "csv",
+    "text_sw": "Mara 1.5 ya mshahara. Mapumziko/sikukuu: mara 2."
+  },
+  {
+    "id": "csv_10800",
+    "topic": "Misconduct",
+    "citation": "GN 42/2007",
+    "source": "csv",
+    "text_en": "Wrongful conduct: theft, violence, gross insubordination, intoxication."
+  },
+  {
+    "id": "csv_10815",
+    "topic": "Utovu wa nidhamu",
+    "citation": "GN 42/2007",
+    "source": "csv",
+    "text_sw": "Mwenendo mbaya: wizi, ghasia, uasi, ulevi."
+  },
+  {
+    "id": "csv_12150",
+    "topic": "Operational requirements",
+    "citation": "ELRA 2004 s.38",
+    "source": "csv",
+    "text_en": "Economic, technological, structural needs leading to retrenchment."
+  },
+  {
+    "id": "csv_12165",
+    "topic": "Mahitaji ya kibiashara",
+    "citation": "ELRA 2004 s.38",
+    "source": "csv",
+    "text_sw": "Mahitaji ya kiuchumi, kiteknolojia, kimuundo."
+  },
+  {
+    "id": "csv_13515",
+    "topic": "Rufaa ya CMA",
+    "citation": "CMA Rules",
+    "source": "csv",
+    "text_sw": "Jaza Fomu Na. 1 ndani ya siku 60. Bila ada."
+  },
+  {
+    "id": "csv_17550",
+    "topic": "Revision",
+    "citation": "ELRA s.91",
+    "source": "csv",
+    "text_en": "Apply at Labour Court within 14 days of CMA award."
+  },
+  {
+    "id": "csv_18900",
+    "topic": "Discrimination",
+    "citation": "ELRA 2004 s.7",
+    "source": "csv",
+    "text_en": "Prohibited on grounds of race, sex, religion, disability, HIV, age, etc."
+  },
+  {
+    "id": "csv_18915",
+    "topic": "Ubaguzi",
+    "citation": "ELRA 2004 s.7",
+    "source": "csv",
+    "text_sw": "Marufuku kwa msingi wa rangi, jinsia, dini, ulemavu, VVU, umri."
+  },
+  {
+    "id": "csv_21600",
+    "topic": "Reinstatement",
+    "citation": "ELRA 2004 s.40 (LLA 4/2025)",
+    "source": "csv",
+    "text_en": "Return to former position after unfair termination."
+  },
+  {
+    "id": "csv_21615",
+    "topic": "Kurudishwa",
+    "citation": "ELRA 2004 s.40 (LLA 4/2025)",
+    "source": "csv",
+    "text_sw": "Kurudi kwenye nafasi ya zamani baada ya kufukuzwa."
+  },
+  {
+    "id": "csv_22950",
+    "topic": "Compensation",
+    "citation": "ELRA 2004 s.40 (LLA 4/2025)",
+    "source": "csv",
+    "text_en": "6-24 months remuneration depending on type of unfair termination."
+  },
+  {
+    "id": "csv_22965",
+    "topic": "Fidia",
+    "citation": "ELRA 2004 s.40 (LLA 4/2025)",
+    "source": "csv",
+    "text_sw": "Miezi 6-24 ya mshahara kulingana na aina."
+  },
+  {
+    "id": "csv_24300",
+    "topic": "Written contract",
+    "citation": "ELRA s.15",
+    "source": "csv",
+    "text_en": "Required for employment >6 months. Must list s.15 particulars."
+  },
+  {
+    "id": "csv_24315",
+    "topic": "Mkataba wa maandishi",
+    "citation": "ELRA s.15",
+    "source": "csv",
+    "text_sw": "Inahitajika kwa zaidi ya miezi 6. Lazima iwe na vipengele vya s.15."
+  },
+  {
+    "id": "csv_25650",
+    "topic": "Fixed-term",
+    "citation": "ELRA 2004 s.14(1)(b) (LLA 4/2025)",
+    "source": "csv",
+    "text_en": "Only 9 permitted categories under amended s.14(1)(b)."
+  },
+  {
+    "id": "csv_25665",
+    "topic": "Muda maalum",
+    "citation": "ELRA 2004 s.14(1)(b) (LLA 4/2025)",
+    "source": "csv",
+    "text_sw": "Aina 9 tu zinazoruhusiwa chini ya s.14(1)(b)."
+  },
+  {
+    "id": "csv_27000",
+    "topic": "Probation",
+    "citation": "GN 42/2007",
+    "source": "csv",
+    "text_en": "No statutory cap but must be reasonable (commonly 3-6 months)."
+  },
+  {
+    "id": "csv_27015",
+    "topic": "Probation",
+    "citation": "GN 42/2007",
+    "source": "csv",
+    "text_sw": "Hakuna kikomo cha kisheria lakini lazima iwe halali (3-6 miezi)."
+  },
+  {
+    "id": "csv_28350",
+    "topic": "Constructive dismissal",
+    "citation": "Case law",
+    "source": "csv",
+    "text_en": "Quitting due to intolerable conditions = treated as dismissal."
+  },
+  {
+    "id": "csv_28365",
+    "topic": "Constructive dismissal",
+    "citation": "Case law",
+    "source": "csv",
+    "text_sw": "Kujiuzulu kutokana na hali mbaya = kuhesabiwa kufukuzwa."
+  },
+  {
+    "id": "csv_29715",
+    "topic": "Masaa ya kazi",
+    "citation": "ELRA 2004 s.19",
+    "source": "csv",
+    "text_sw": "Juu masaa 45 ya kawaida + 12 ya ziada kwa wiki."
+  },
+  {
+    "id": "csv_32400",
+    "topic": "Personal representative",
+    "citation": "ELRA s.86(6)",
+    "source": "csv",
+    "text_en": "Only employees may use one at CMA mediation."
+  },
+  {
+    "id": "csv_33750",
+    "topic": "Electronic service",
+    "citation": "ELRA s.97",
+    "source": "csv",
+    "text_en": "Documents may be served electronically (LLA 4/2025 s.97)."
+  },
+  {
+    "id": "csv_33765",
+    "topic": "Huduma ya kielektroniki",
+    "citation": "ELRA s.97",
+    "source": "csv",
+    "text_sw": "Nyaraka zinaweza kupelekwa kielektroniki."
+  },
+  {
+    "id": "csv_35100",
+    "topic": "Workers Compensation Fund",
+    "citation": "WCA 2008",
+    "source": "csv",
+    "text_en": "Compensates workplace injuries within 12-month claim window."
+  },
+  {
+    "id": "csv_35115",
+    "topic": "Mfuko wa Fidia ya Wafanyakazi",
+    "citation": "WCA 2008",
+    "source": "csv",
+    "text_sw": "Inalipa majeraha kazini ndani ya muda wa madai wa miezi 12."
+  },
+  {
+    "id": "csv_36450",
+    "topic": "Minor employment",
+    "citation": "ELRA s.5",
+    "source": "csv",
+    "text_en": "Min age 14 light work, 18 hazardous. Below 14 unlawful."
+  },
+  {
+    "id": "csv_36465",
+    "topic": "Ajira ya watoto",
+    "citation": "ELRA s.5",
+    "source": "csv",
+    "text_sw": "Umri wa chini 14 kazi nyepesi, 18 hatari. Chini ya 14 haramu."
+  },
+  {
+    "id": "csv_37800",
+    "topic": "Transfer of business",
+    "citation": "ELRA s.37(5)",
+    "source": "csv",
+    "text_en": "Does not interrupt continuity of employment (s.37(5))."
+  },
+  {
+    "id": "csv_39150",
+    "topic": "Show cause",
+    "citation": "GN 42/2007 R.13",
+    "source": "csv",
+    "text_en": "Notice requiring employee to explain alleged misconduct."
+  },
+  {
+    "id": "csv_39165",
+    "topic": "Sababisha",
+    "citation": "GN 42/2007 R.13",
+    "source": "csv",
+    "text_sw": "Notisi inayohitaji mfanyakazi kueleza tuhuma."
+  }
+]

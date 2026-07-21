@@ -58,3 +58,8 @@ Sheria-Bot_5M_Dataset.zip
 # in pipeline.load_state() samples large files automatically.
 data/*.csv
 data/*.jsonl
+
+# --- flan-t5 generator weights: 990 MB, exceeds GitHub 100 MB cap.  ---
+# --- Retrain via SheriaBot_Generator_Colab.ipynb OR store on HuggingFace ---
+sheriabot_generator/
+sheriabot_generator.zip

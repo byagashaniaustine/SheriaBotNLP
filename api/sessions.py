@@ -1,18 +1,4 @@
-"""Per-WhatsApp-user conversation memory, backed by SQLite.
 
-The store persists three things:
-
-  sessions            — one row per wa_id: profile JSON, lang, last_intent,
-                        last_user_text, created_at, updated_at.
-  turns               — the rolling window of {user,bot} messages per wa_id,
-                        capped at MAX_TURNS_PER_SESSION.
-  processed_messages  — Meta message_ids we've already handled, to dedup the
-                        retries Meta fires on any non-2xx response.
-
-Path is configurable via env var SESSION_DB_PATH. Defaults to
-artifacts/sessions.db. On Railway, mount a persistent volume (e.g. /data)
-and set SESSION_DB_PATH=/data/sessions.db so state survives redeploys.
-"""
 from __future__ import annotations
 
 import json
@@ -107,15 +93,30 @@ def is_introduction(text: str) -> bool:
 
 
 def is_short_followup(text: str) -> bool:
-    """True if this looks like a context-dependent follow-up ("how much?", "when?")
-    that needs the previous user turn spliced in before classification.
-    Heuristic: 3 words or fewer.
+    """True if this looks like a context-dependent follow-up ("how much?",
+    "when?", "where can I start?", "and then?") that needs the previous
+    user turn spliced in before classification.
+
+    Heuristic:
+      - 5 words or fewer, AND
+      - doesn't already contain a legal acronym / topic keyword (those are
+        self-contained even when short, e.g. "wcf ni nini").
     """
     stripped = text.strip()
     if not stripped:
         return False
     words = re.findall(r"[A-Za-zÀ-ſ]+", stripped)
-    return len(words) <= 3
+    if len(words) > 5:
+        return False
+    low = stripped.lower()
+    self_contained_markers = (
+        "cma", "elra", "wcf", "wca", "nssf", "psssf", "nhif", "osha", "lla",
+        "severance", "notice", "leave", "wage", "salary",
+        "kifuta", "notisi", "likizo", "mshahara",
+    )
+    if any(m in low for m in self_contained_markers):
+        return False
+    return True
 
 
 # ---- SQLite-backed session store ----------------------------------------

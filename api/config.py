@@ -1,39 +1,32 @@
-"""Central config — paths and hyperparameters for the Sheria-Bot NLP API."""
+"""Runtime paths + API metadata for the Sheria-Bot WhatsApp service.
+
+The runtime API is BERT-only: it loads the fine-tuned DistilBERT model from
+`../sheriabot_bert_model/` and the baked answer bank from `artifacts/`.
+It never reads the raw CSVs in `../data/` and never touches `../graphs/` —
+those live independently for training and reporting.
+"""
 from pathlib import Path
 
-# The api/ folder lives inside "sheriabot NLP/" and data/ + graphs/ sit next to it.
-ROOT       = Path(__file__).resolve().parent.parent      # -> sheriabot NLP/
-DATA_DIR   = ROOT / "data"
-GRAPHS_DIR = ROOT / "graphs"
-ARTIFACTS  = Path(__file__).resolve().parent / "artifacts"
+# Load api/.env into os.environ BEFORE anything else imports env vars.
+# Silent if python-dotenv isn't installed (production deploys usually inject
+# env vars directly via the platform).
+try:
+    from dotenv import load_dotenv
+    load_dotenv(dotenv_path=Path(__file__).resolve().parent / ".env")
+except ImportError:
+    pass
 
-GRAPHS_DIR.mkdir(exist_ok=True)
+# api/ lives inside "sheriabot NLP/"; the trained BERT model sits next to it.
+ROOT           = Path(__file__).resolve().parent.parent   # -> sheriabot NLP/
+ARTIFACTS      = Path(__file__).resolve().parent / "artifacts"
+BERT_MODEL_DIR = ROOT / "sheriabot_bert_model"
+
 ARTIFACTS.mkdir(exist_ok=True)
 
-# Sheria-Bot Intents CSV. Prefer the 5M-dataset lowercase name, fall back to the
-# small-dataset uppercase name if only that is present.
-_INTENTS_CANDIDATES = [
-    DATA_DIR / "04_intents.csv",       # 5M dataset
-    DATA_DIR / "04_Intents.csv",       # small dataset
-]
-INTENTS_CSV = next((p for p in _INTENTS_CANDIDATES if p.exists()), _INTENTS_CANDIDATES[0])
-
-# Feature engineering
-TFIDF_MAX_FEATURES = 5000
-TFIDF_NGRAM_RANGE  = (1, 2)
-TFIDF_MIN_DF       = 2
-
-# Modelling
-TEST_SIZE     = 0.2
-RANDOM_SEED   = 42
-CV_FOLDS      = 5
-
-# Multilingual model (Swahili + English)
-TRANSFORMER_MODEL = "distilbert-base-multilingual-cased"
-
 # API meta
-API_TITLE   = "Sheria-Bot NLP API"
-API_VERSION = "1.0.0"
-API_DESC    = ("REST API exposing the Sheria-Bot NLP pipeline — EDA, POS, NER, "
-               "text visualisation, feature engineering, embeddings, tokenisation, "
-               "and intent classification.")
+API_TITLE   = "Sheria-Bot WhatsApp API"
+API_VERSION = "2.0.0"
+API_DESC    = ("WhatsApp-facing Tanzania employment-law assistant. "
+               "Classifies inbound messages with a fine-tuned multilingual "
+               "DistilBERT, generates a response from the baked answer bank, "
+               "and replies via the Meta WhatsApp Cloud API.")

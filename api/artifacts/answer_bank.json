@@ -1,311 +1,161 @@
 {
-  "cma_appeal": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
-    }
-  },
   "cma_filing": {
     "en": {
-      "response": "File CMA Form 1 at the nearest CMA office within 60 days of the dispute. No fee. Include both parties' details, dispute date and facts, evidence (contract, payslips, dismissal letter, witness statements), and the remedy you seek. Mediation attendance is mandatory under LLA 4/2025.",
-      "citation": "CMA Rules; ELRA 2004 s.86(7) (LLA 4/2025)"
+      "response": "Form 1 at CMA office within 60 days. No fee. Mediation attendance mandatory (LLA 4/2025).",
+      "citation": "CMA Rules; ELRA 2004 s.86 (LLA 4/2025)"
     },
     "sw": {
-      "response": "Jaza Fomu Na. 1 ya CMA katika ofisi ya CMA iliyo karibu ndani ya siku 60 ya mgogoro. Bila ada. Jumuisha taarifa za pande mbili, tarehe na ukweli, ushahidi (mkataba, slip za mshahara, barua ya kufukuzwa, taarifa za mashahidi), na suluhu unayoomba. Kuhudhuria ni lazima chini ya LLA 4/2025.",
-      "citation": "CMA Rules; ELRA 2004 s.86(7) (LLA 4/2025)"
+      "response": "Fomu 1 CMA siku 60. Bila ada. Kuhudhuria lazima (LLA 4/2025).",
+      "citation": "CMA Rules; ELRA 2004 s.86 (LLA 4/2025)"
     }
   },
   "contract_breach": {
     "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
+      "response": "Unilateral changes breach the contract. Object in writing. File CMA Form 1 within 60 days.",
+      "citation": "ELRA s.15; CMA"
     },
     "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
-    }
-  },
-  "contract_review": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
-    }
-  },
-  "demotion": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
+      "response": "Mabadiliko ya upande mmoja ni ukiukaji. Pinga kwa maandishi. Peleka CMA Fomu 1 siku 60.",
+      "citation": "ELRA s.15; CMA"
     }
   },
   "discrimination": {
     "en": {
-      "response": "Discrimination on protected grounds (tribe, race, sex, gender, pregnancy, disability, HIV/AIDS, etc.) is prohibited under ELRA s.7. File CMA Form 1 within 60 days. Compensation: 12-24 months remuneration under amended s.40.",
-      "citation": "ELRA 2004 s.7; ELRA 2004 s.40 (as amended by LLA 4/2025)"
+      "response": "Discrimination on protected grounds prohibited (s.7). File CMA Form 1 within 60 days. Compensation 12-24 months.",
+      "citation": "ELRA 2004 s.7; ELRA 2004 s.40 (LLA 4/2025)"
     },
     "sw": {
-      "response": "Ubaguzi kwa misingi iliyolindwa (kabila, rangi, jinsia, mimba, ulemavu, VVU n.k.) ni marufuku chini ya ELRA s.7. Peleka CMA Fomu 1 ndani ya siku 60. Fidia: miezi 12-24 chini ya s.40.",
-      "citation": "ELRA 2004 s.7; ELRA 2004 s.40 (as amended by LLA 4/2025)"
+      "response": "Ubaguzi kwa misingi iliyolindwa marufuku (s.7). Peleka CMA Fomu 1 siku 60. Fidia miezi 12-24.",
+      "citation": "ELRA 2004 s.7; ELRA 2004 s.40 (LLA 4/2025)"
     }
   },
   "dismissal_complaint": {
     "en": {
-      "response": "This may be unfair termination under ELRA s.36. Burden of proof is on your employer. File CMA Form 1 within 60 days. Possible remedies under s.40 (LLA 4/2025): reinstatement, re-engagement, or compensation of 6-24 months remuneration depending on whether the procedure, reason, or both were unfair.",
-      "citation": "ELRA 2004 s.36 (as amended by LLA 4/2025); CMA Rules; ELRA 2004 s.40 (as amended by LLA 4/2025)"
+      "response": "May be unfair termination under ELRA s.36. File CMA Form 1 within 60 days. Remedies: reinstatement, re-engagement, or 6-24 months compensation.",
+      "citation": "ELRA 2004 s.36 (LLA 4/2025); ELRA 2004 s.40 (LLA 4/2025)"
     },
     "sw": {
-      "response": "Hii inaweza kuwa kufukuzwa bila haki chini ya ELRA s.36. Mzigo wa uthibitisho ni wa mwajiri. Jaza Fomu Na. 1 ya CMA ndani ya siku 60. Suluhu chini ya s.40 (LLA 4/2025): kurudishwa, kuajiriwa upya, au fidia ya miezi 6-24.",
-      "citation": "ELRA 2004 s.36 (as amended by LLA 4/2025); CMA Rules; ELRA 2004 s.40 (as amended by LLA 4/2025)"
+      "response": "Inaweza kuwa kufukuzwa bila haki ELRA s.36. Jaza CMA Fomu 1 ndani ya siku 60. Suluhu: kurudishwa, re-engagement, au fidia miezi 6-24.",
+      "citation": "ELRA 2004 s.36 (LLA 4/2025); ELRA 2004 s.40 (LLA 4/2025)"
     }
   },
   "fixed_term_query": {
     "en": {
-      "response": "Under amended ELRA s.14(1)(b) (LLA 4/2025), fixed-term is allowed only for: (1) temporary workload ≤12mo, (2) graduate trainee ≤24mo, (3) seasonal, (4) specific project, (5) non-citizen matched to work permit, (6) public scheme, (7) externally-funded, (8) retiree, (9) tender-based.",
+      "response": "9 fixed-term categories under amended s.14(1)(b): temporary, graduate trainee, seasonal, project, non-citizen, public scheme, externally-funded, retiree, tender.",
       "citation": "ELRA 2004 s.14(1)(b) (LLA 4/2025)"
     },
     "sw": {
-      "response": "Chini ya ELRA s.14(1)(b) (LLA 4/2025), fixed-term inaruhusiwa tu kwa: (1) kazi ya muda ≤miezi 12, (2) graduate trainee ≤miezi 24, (3) msimu, (4) mradi maalum, (5) raia wa kigeni=kibali, (6) miradi ya umma, (7) ufadhili wa nje, (8) wastaafu, (9) tenda.",
+      "response": "Aina 9 chini ya s.14(1)(b): muda, graduate trainee, msimu, mradi, raia kigeni, miradi ya umma, ufadhili nje, wastaafu, tenda.",
       "citation": "ELRA 2004 s.14(1)(b) (LLA 4/2025)"
     }
   },
   "general_help": {
     "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
+      "response": "Tell me more about your situation — what happened, when, and what outcome you want.",
       "citation": "ELRA + CMA Rules"
     },
     "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
+      "response": "Niambie zaidi — kilichotokea, lini, na unataka nini.",
+      "citation": "ELRA + CMA Rules"
     }
   },
   "harassment": {
     "en": {
-      "response": "Sexual harassment at workplace by employer or co-employee is unlawful discrimination under ELRA s.7(4). Document each incident (date, words/actions, witnesses). File CMA Form 1 within 60 days. Remedies include compensation of 12-24 months remuneration under amended s.40.",
-      "citation": "ELRA s.7(4); CMA Rules; ELRA 2004 s.40 (as amended by LLA 4/2025)"
+      "response": "Sexual harassment is unlawful discrimination (s.7(4)). File CMA Form 1 within 60 days. Compensation 12-24 months under s.40.",
+      "citation": "ELRA s.7(4); ELRA 2004 s.40 (LLA 4/2025)"
     },
     "sw": {
-      "response": "Unyanyasaji wa kingono kazini ni ubaguzi haramu chini ya ELRA s.7(4). Hifadhi kila tukio (tarehe, maneno/vitendo, mashahidi). Peleka CMA Fomu 1 ndani ya siku 60. Suluhu: fidia ya miezi 12-24 chini ya s.40 (boresha).",
-      "citation": "ELRA s.7(4); CMA Rules; ELRA 2004 s.40 (as amended by LLA 4/2025)"
-    }
-  },
-  "leave_denied": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
+      "response": "Unyanyasaji wa kingono ni ubaguzi haramu (s.7(4)). Peleka CMA Fomu 1 siku 60. Fidia miezi 12-24 chini ya s.40.",
+      "citation": "ELRA s.7(4); ELRA 2004 s.40 (LLA 4/2025)"
     }
   },
   "leave_query": {
     "en": {
-      "response": "Under ELRA you are entitled to: 28 days annual leave (s.29); up to 126 days sick leave per 3-year cycle (s.32); 84 days paid maternity leave (s.33, plus premature-birth top-up to 40 weeks under LLA 4/2025); 3 days paternity (or 7 extra for premature birth); and up to 30 days unpaid leave on written request.",
-      "citation": "ELRA 2004 s.29; ELRA 2004 s.32; ELRA 2004 s.33 (amended); ELRA 2004 s.34 (amended); LLA 4/2025"
+      "response": "Annual: 28 days/12mo (s.29). Sick: 126 days/3yr (s.32). Maternity: 84 days + premature extra (s.33). Paternity: 3 days + 7 premature (s.34). Unpaid: up to 30 days.",
+      "citation": "ELRA 2004 s.29; ELRA 2004 s.32; ELRA 2004 s.33 (LLA 4/2025); ELRA 2004 s.34 (LLA 4/2025)"
     },
     "sw": {
-      "response": "Chini ya ELRA una haki za: siku 28 likizo ya mwaka (s.29); hadi siku 126 za ugonjwa kwa mzunguko wa miaka 3 (s.32); siku 84 za uzazi zenye malipo (s.33, pamoja na nyongeza kwa kuzaliwa kabla ya muda hadi wiki 40); siku 3 za baba (au siku 7 za ziada kwa premature); na hadi siku 30 za likizo bila malipo.",
-      "citation": "ELRA 2004 s.29; ELRA 2004 s.32; ELRA 2004 s.33 (amended); ELRA 2004 s.34 (amended); LLA 4/2025"
-    }
-  },
-  "mediation_failed": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
+      "response": "Mwaka: siku 28/miezi 12 (s.29). Ugonjwa: siku 126/miaka 3 (s.32). Uzazi: siku 84 + premature (s.33). Baba: siku 3 + 7 premature (s.34). Bila malipo: hadi siku 30.",
+      "citation": "ELRA 2004 s.29; ELRA 2004 s.32; ELRA 2004 s.33 (LLA 4/2025); ELRA 2004 s.34 (LLA 4/2025)"
     }
   },
   "minimum_wage_query": {
     "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
+      "response": "GN 605A/2025 sets 49 sub-sector minima effective 1 Jan 2026 ranging TZS 80,000 to 765,900/month.",
+      "citation": "GN 605A/2025"
     },
     "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
-    }
-  },
-  "minor_at_work": {
-    "en": {
-      "response": "The minimum age for employment is 14 years for light work only (no school disruption). 18 for hazardous work. Below 14 is unlawful under ELRA s.5. Report to the District Labour Office and police. ILO C138 and C182 ratified by Tanzania apply.",
-      "citation": "ELRA s.5; ILO C138; ILO C182"
-    },
-    "sw": {
-      "response": "Umri wa chini ni 14 kwa kazi nyepesi tu. 18 kwa kazi hatari. Chini ya 14 ni haramu chini ya ELRA s.5. Ripoti Ofisi ya Kazi ya Wilaya na polisi.",
-      "citation": "ELRA s.5; ILO C138; ILO C182"
+      "response": "GN 605A/2025 inaweka sub-sekta 49 kuanzia 1 Jan 2026, TZS 80,000 hadi 765,900/mwezi.",
+      "citation": "GN 605A/2025"
     }
   },
   "notice_query": {
     "en": {
-      "response": "Under ELRA s.41: 7 days notice in the first month of employment; thereafter 4 days for daily/weekly employees or 28 days for monthly employees. Notice must be in writing, state reasons, and not run during a leave period. Employer may pay in lieu of notice.",
+      "response": "ELRA s.41: 7d first month; 4d daily/weekly; 28d monthly. In writing, with reasons.",
       "citation": "ELRA 2004 s.41"
     },
     "sw": {
-      "response": "Chini ya ELRA s.41: siku 7 katika mwezi wa kwanza; baadaye siku 4 (siku/wiki) au siku 28 (mwezi). Kwa maandishi, na sababu, isipite likizo. Mwajiri anaweza kulipa badala ya notisi.",
+      "response": "ELRA s.41: siku 7 mwezi wa kwanza; 4 siku/wiki; 28 mwezi. Kwa maandishi, na sababu.",
       "citation": "ELRA 2004 s.41"
-    }
-  },
-  "nssf_query": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
     }
   },
   "overtime_dispute": {
     "en": {
-      "response": "Overtime must be paid at 1.5x basic wage under ELRA s.19. Work on rest day or public holiday is paid at 2x. Maximum 12 hours overtime per week. Keep records of authorised overtime hours. Unpaid overtime is a CMA-referable dispute.",
+      "response": "Overtime at 1.5x basic. 2x on rest day/holiday. Max 12 hours overtime/week.",
       "citation": "ELRA 2004 s.19"
     },
     "sw": {
-      "response": "Saa za ziada lazima zilipwe mara 1.5 ya mshahara chini ya ELRA s.19. Siku ya mapumziko au sikukuu: mara 2. Juu ya saa 12 za ziada kwa wiki. Hifadhi rekodi ya saa zilizoidhinishwa. Overtime isiyo na malipo ni mgogoro wa CMA.",
+      "response": "Overtime mara 1.5. Mara 2 mapumziko/sikukuu. Juu saa 12/wiki.",
       "citation": "ELRA 2004 s.19"
-    }
-  },
-  "payslip_missing": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
-    }
-  },
-  "pension_query": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
-    }
-  },
-  "permit_query": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
-    }
-  },
-  "probation_query": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
     }
   },
   "retrenchment": {
     "en": {
-      "response": "Retrenchment under ELRA s.38 requires: (1) notice of intention as soon as contemplated; (2) disclosure of relevant information; (3) consultation on reasons, alternatives, selection criteria, timing, severance; (4) severance pay of 7 days basic × years served (cap 10). If the procedure was skipped, refer to CMA.",
+      "response": "Retrenchment requires s.38 process: notice, consultation, criteria, severance. Skipped steps → unfair.",
       "citation": "ELRA 2004 s.38; ELRA 2004 s.42"
     },
     "sw": {
-      "response": "Retrenchment chini ya ELRA s.38 inahitaji: (1) notisi ya nia mapema; (2) kutoa taarifa muhimu; (3) majadiliano kuhusu sababu, mbadala, vigezo, muda, kifuta jasho; (4) kifuta jasho cha siku 7 × miaka (hadi 10). Iwapo utaratibu haukufuatwa, peleka CMA.",
+      "response": "Retrenchment inahitaji utaratibu wa s.38: notisi, majadiliano, vigezo, kifuta jasho. Hatua iliyorukwa → bila haki.",
       "citation": "ELRA 2004 s.38; ELRA 2004 s.42"
     }
   },
   "severance_query": {
     "en": {
-      "response": "Under ELRA s.42, severance pay = 7 days basic wage × completed years of service (capped at 10 years). Daily basic = monthly wage / 26. Severance is NOT payable if termination is for misconduct. Tell me your monthly wage and years of service and I'll compute the exact amount.",
+      "response": "Severance = 7 × min(years,10) × monthly_wage/26. Not payable for misconduct.",
       "citation": "ELRA 2004 s.42"
     },
     "sw": {
-      "response": "Chini ya ELRA s.42, kifuta jasho = siku 7 za mshahara wa msingi × miaka iliyokamilika (hadi miaka 10). Mshahara wa siku = mshahara wa mwezi / 26. HAKILIPWI kwa utovu wa nidhamu. Niambie mshahara wako wa mwezi na miaka ya kazi nikuhesabie.",
+      "response": "Kifuta jasho = 7 × min(miaka,10) × mshahara_wa_mwezi/26. Hakistahili kwa utovu.",
       "citation": "ELRA 2004 s.42"
-    }
-  },
-  "strike_query": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
-    }
-  },
-  "transfer_dispute": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
-    }
-  },
-  "union_query": {
-    "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
-    },
-    "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
     }
   },
   "wage_underpayment": {
     "en": {
-      "response": "For a crops and animal production worker in agriculture, the minimum wage is TZS 175,000/month under GN 605A/2025 (effective 1 Jan 2026). If you are paid below this, you may file with CMA within 60 days to recover the difference plus interest.",
+      "response": "Minimum wage is set by sub-sector under GN 605A/2025. If paid below, file CMA within 60 days to recover difference + interest.",
       "citation": "GN 605A/2025; CMA Rules"
     },
     "sw": {
-      "response": "Kwa crops and animal production agriculture, kima cha chini ni TZS 175,000/mwezi chini ya GN 605A/2025 (inaanza 1 Jan 2026). Iwapo unalipwa chini, unaweza kupeleka CMA ndani ya siku 60 kurudisha tofauti pamoja na riba.",
+      "response": "Kima cha chini kimewekwa kwa sub-sekta GN 605A/2025. Iwapo chini, peleka CMA siku 60 kurudisha tofauti + riba.",
       "citation": "GN 605A/2025; CMA Rules"
     }
   },
   "wage_unpaid": {
     "en": {
-      "response": "I can help with employment-law issues. Tell me a bit more about your situation — what happened, when, and what outcome you want.",
-      "citation": "ELRA + CMA Rules"
+      "response": "ELRA s.27 requires wages on agreed pay day. Demand in writing; if unpaid, file CMA Form 1 within 60 days for arrears + interest.",
+      "citation": "ELRA s.27; CMA Rules"
     },
     "sw": {
-      "response": "Naweza kusaidia masuala ya sheria ya ajira. Niambie zaidi kuhusu hali yako — kilichotokea, lini, na unataka nini.",
-      "citation": "ELRA + Kanuni za CMA"
-    }
-  },
-  "wcf_claim": {
-    "en": {
-      "response": "Report the injury immediately to your employer in writing AND to the Workers Compensation Fund (WCF). File the WCF claim within 12 months of injury. Under WCA 2008 you may receive medical treatment, periodic payments while disabled, and lump-sum compensation.",
-      "citation": "WCA 2008"
-    },
-    "sw": {
-      "response": "Ripoti jeraha haraka kwa mwajiri kwa maandishi NA Mfuko wa Fidia ya Wafanyakazi (WCF). Wasilisha madai WCF ndani ya miezi 12. Chini ya WCA 2008 una haki ya matibabu, malipo ya muda wa ulemavu, na fidia ya jumla.",
-      "citation": "WCA 2008"
+      "response": "ELRA s.27 inahitaji mshahara siku iliyokubaliwa. Dai kwa maandishi; iwapo halijalipwa, peleka CMA siku 60 kurudisha + riba.",
+      "citation": "ELRA s.27; CMA Rules"
     }
   },
   "workplace_injury": {
     "en": {
-      "response": "Report the injury immediately to your employer in writing AND to the Workers Compensation Fund (WCF). File the WCF claim within 12 months of injury. Under WCA 2008 you may receive medical treatment, periodic payments while disabled, and lump-sum compensation.",
+      "response": "Report to employer in writing AND WCF within 12 months. Medical care + compensation under WCA 2008.",
       "citation": "WCA 2008"
     },
     "sw": {
-      "response": "Ripoti jeraha haraka kwa mwajiri kwa maandishi NA Mfuko wa Fidia ya Wafanyakazi (WCF). Wasilisha madai WCF ndani ya miezi 12. Chini ya WCA 2008 una haki ya matibabu, malipo ya muda wa ulemavu, na fidia ya jumla.",
+      "response": "Ripoti mwajiri kwa maandishi NA WCF siku 12 miezi. Matibabu + fidia WCA 2008.",
       "citation": "WCA 2008"
     }
   }
